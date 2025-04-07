@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "guided-tours",
   "private": true,
   "scripts": {
     "build": "turbo run build",
