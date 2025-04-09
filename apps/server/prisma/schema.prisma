@@ -19,3 +19,17 @@ id Int @id @default(autoincrement())
 email String @unique
 name String
 }
+model Tour {
+  id          Int      @id @default(autoincrement())
+  title       String
+  location    String
+  price       Float
+  tags        String[]
+  images      String[]
+  description String   
+  shortDescription String   
+  duration         String
+  tourDetails Json     
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

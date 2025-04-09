@@ -1,0 +1,11 @@
+.heading {
+  font-weight: 450;
+
+  &:is(h1) {
+    font-weight: 600;
+  }
+
+  &:is(h6) {
+    color: var(--mantine-color-dimmed);
+  }
+}

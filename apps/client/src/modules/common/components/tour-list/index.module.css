@@ -1,0 +1,54 @@
+.lineItem {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  flex-wrap: nowrap;
+  height: 280px;
+  width: 100%;
+}
+
+.lineItem:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.imageContainer {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.redBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.contentContainer {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.title:hover {
+  color: #228be6;
+}
+
+.description {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .lineItem {
+    padding: 10px;
+  }
+}

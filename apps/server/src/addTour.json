@@ -1,0 +1,230 @@
+[
+  {
+    "title": "Amazing Tour to Paris",
+    "location": "Paris, France",
+    "price": 999,
+    "tags": ["Adventure", "Culture", "Romantic"],
+    "images": ["/hero/hero-01.png", "/hero/hero-02.png"],
+    "description": "A wonderful 7-day tour through the streets of Paris.",
+    "shortDescription": "Explore Paris in 7 days",
+    "duration": "7 days",
+    "tourDetails": {
+      "itinerary": ["Visit Eiffel Tower", "Cruise on the Seine"]
+    }
+  },
+  {
+    "title": "Safari in Kenya",
+    "location": "Nairobi, Kenya",
+    "price": 1500,
+    "tags": ["Wildlife", "Nature"],
+    "images": ["/hero/hero-02.png", "/hero/hero-03.png"],
+    "description": "Experience wildlife like never before in Kenya.",
+    "shortDescription": "A 5-day safari adventure",
+    "duration": "5 days",
+    "tourDetails": {
+      "itinerary": ["Day 1: Arrival", "Day 2-4: Safari", "Day 5: Departure"]
+    }
+  },
+  {
+    "title": "Tokyo City Tour",
+    "location": "Tokyo, Japan",
+    "price": 1200,
+    "tags": ["City", "Culture", "Technology"],
+    "images": ["/hero/hero-01.png", "/hero/hero-03.png"],
+    "description": "A 6-day exploration of Tokyo's technology and culture.",
+    "shortDescription": "Experience Tokyo's modern marvels",
+    "duration": "6 days",
+    "tourDetails": {
+      "itinerary": [
+        "Visit Shibuya Crossing",
+        "Explore Akihabara",
+        "Relax at Meiji Shrine"
+      ]
+    }
+  },
+  {
+    "title": "Egyptian Pyramid Adventure",
+    "location": "Cairo, Egypt",
+    "price": 2000,
+    "tags": ["History", "Culture", "Adventure"],
+    "images": ["/hero/hero-03.png", "/hero/hero-01.png"],
+    "description": "A 7-day tour through ancient Egypt, exploring the pyramids.",
+    "shortDescription": "Discover the wonders of ancient Egypt",
+    "duration": "7 days",
+    "tourDetails": {
+      "itinerary": [
+        "Visit the Great Pyramid of Giza",
+        "Explore the Sphinx",
+        "Tour the Egyptian Museum"
+      ]
+    }
+  },
+  {
+    "title": "Rome in a Day",
+    "location": "Rome, Italy",
+    "price": 650,
+    "tags": ["History", "Culture"],
+    "images": ["/hero/hero-02.png", "/hero/hero-03.png"],
+    "description": "A one-day whirlwind tour through the eternal city of Rome.",
+    "shortDescription": "Discover Rome’s history in a day",
+    "duration": "1 day",
+    "tourDetails": {
+      "itinerary": [
+        "Visit the Colosseum",
+        "Tour the Vatican",
+        "Explore the Roman Forum"
+      ]
+    }
+  },
+  {
+    "title": "Grand Tour of Australia",
+    "location": "Sydney, Australia",
+    "price": 3500,
+    "tags": ["Adventure", "Nature"],
+    "images": ["/hero/hero-01.png", "/hero/hero-02.png"],
+    "description": "A 10-day tour through the highlights of Australia.",
+    "shortDescription": "Explore the natural wonders of Australia",
+    "duration": "10 days",
+    "tourDetails": {
+      "itinerary": [
+        "Explore Sydney Opera House",
+        "Snorkel in the Great Barrier Reef",
+        "Visit Uluru"
+      ]
+    }
+  },
+  {
+    "title": "New York City Extravaganza",
+    "location": "New York, USA",
+    "price": 1200,
+    "tags": ["City", "Culture"],
+    "images": ["/hero/hero-03.png", "/hero/hero-01.png"],
+    "description": "A 5-day journey through the Big Apple’s iconic landmarks.",
+    "shortDescription": "Experience the magic of New York City",
+    "duration": "5 days",
+    "tourDetails": {
+      "itinerary": [
+        "Visit Central Park",
+        "Explore the Statue of Liberty",
+        "Tour Times Square"
+      ]
+    }
+  },
+  {
+    "title": "Alaskan Wilderness Expedition",
+    "location": "Anchorage, Alaska",
+    "price": 2500,
+    "tags": ["Adventure", "Nature"],
+    "images": ["/hero/hero-02.png", "/hero/hero-03.png"],
+    "description": "A thrilling 8-day adventure in Alaska’s wilderness.",
+    "shortDescription": "Survive and explore Alaska’s wilderness",
+    "duration": "8 days",
+    "tourDetails": {
+      "itinerary": [
+        "Explore Denali National Park",
+        "Cruise the Inside Passage",
+        "Visit Juneau"
+      ]
+    }
+  },
+  {
+    "title": "Tropical Thailand Tour",
+    "location": "Bangkok, Thailand",
+    "price": 900,
+    "tags": ["Beach", "Adventure"],
+    "images": ["/hero/hero-03.png", "/hero/hero-01.png"],
+    "description": "A 7-day tour of Thailand’s beaches and temples.",
+    "shortDescription": "Relax and explore Thailand’s beauty",
+    "duration": "7 days",
+    "tourDetails": {
+      "itinerary": [
+        "Visit Phi Phi Islands",
+        "Explore ancient temples in Ayutthaya"
+      ]
+    }
+  },
+  {
+    "title": "Bali Bliss",
+    "location": "Bali, Indonesia",
+    "price": 800,
+    "tags": ["Beach", "Relaxation"],
+    "images": ["/hero/hero-02.png", "/hero/hero-03.png"],
+    "description": "A 5-day relaxing getaway in Bali.",
+    "shortDescription": "Relax and unwind in Bali",
+    "duration": "5 days",
+    "tourDetails": {
+      "itinerary": [
+        "Explore Ubud's rice terraces",
+        "Sunbathe at Nusa Dua Beach"
+      ]
+    }
+  },
+  {
+    "title": "Canadian Rockies Road Trip",
+    "location": "Banff, Canada",
+    "price": 1800,
+    "tags": ["Nature", "Adventure"],
+    "images": ["/hero/hero-01.png", "/hero/hero-02.png"],
+    "description": "A scenic 7-day road trip through the Canadian Rockies.",
+    "shortDescription": "Explore the beauty of the Canadian Rockies",
+    "duration": "7 days",
+    "tourDetails": {
+      "itinerary": [
+        "Visit Lake Louise",
+        "Tour Jasper National Park",
+        "Explore Banff National Park"
+      ]
+    }
+  },
+  {
+    "title": "Machu Picchu and Peru",
+    "location": "Cusco, Peru",
+    "price": 2200,
+    "tags": ["History", "Adventure"],
+    "images": ["/hero/hero-03.png", "/hero/hero-01.png"],
+    "description": "A 6-day tour of Peru, including Machu Picchu.",
+    "shortDescription": "Discover the mysteries of Peru",
+    "duration": "6 days",
+    "tourDetails": {
+      "itinerary": [
+        "Visit Sacred Valley",
+        "Hike to Machu Picchu",
+        "Explore Cusco"
+      ]
+    }
+  },
+  {
+    "title": "Iceland Adventure",
+    "location": "Reykjavik, Iceland",
+    "price": 1400,
+    "tags": ["Nature", "Adventure"],
+    "images": ["/hero/hero-02.png", "/hero/hero-03.png"],
+    "description": "An unforgettable 8-day journey through Iceland's landscapes.",
+    "shortDescription": "Explore Iceland’s stunning landscapes",
+    "duration": "8 days",
+    "tourDetails": {
+      "itinerary": [
+        "Visit the Blue Lagoon",
+        "Explore Golden Circle",
+        "Tour Vatnajökull National Park"
+      ]
+    }
+  },
+  {
+    "title": "Antarctic Expedition",
+    "location": "Ushuaia, Argentina",
+    "price": 5000,
+    "tags": ["Adventure", "Wildlife"],
+    "images": ["/hero/hero-01.png", "/hero/hero-02.png"],
+    "description": "An epic 12-day expedition to Antarctica.",
+    "shortDescription": "Embark on the adventure of a lifetime",
+    "duration": "12 days",
+    "tourDetails": {
+      "itinerary": [
+        "Cruise to Antarctic Peninsula",
+        "See penguins and seals",
+        "Visit Ushuaia"
+      ]
+    }
+  }
+]
