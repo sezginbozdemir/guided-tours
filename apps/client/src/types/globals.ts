@@ -9,4 +9,5 @@ export interface Tour {
   shortDescription: string;
   duration: string;
   tourDetails: any;
+  label?: string | null;
 }

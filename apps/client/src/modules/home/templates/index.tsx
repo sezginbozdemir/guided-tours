@@ -1,22 +1,33 @@
-import { Box, Title, Text, Container } from "@mantine/core";
+import { Container, Stack, Title } from "@mantine/core";
 import Hero from "../components/hero";
 import { Tour } from "@/types/globals";
 import TourSlider from "@/modules/common/components/tour-slider";
 import TourGrid from "@/modules/common/components/tour-grid";
-import TourList from "@/modules/common/components/tour-list";
+import FeaturedTours from "@/modules/common/components/featured-tours";
 
-interface HomeTemplateProps {
+interface Props {
   tours: Tour[];
 }
+const locations = ["Turkey", "Istanbul"];
 
-const HomeTemplate: React.FC<HomeTemplateProps> = ({ tours }) => {
+const HomeTemplate: React.FC<Props> = ({ tours }) => {
   return (
     <>
       <Hero />
       <Container size="xl" w="100%">
+        <FeaturedTours tours={tours} />
         <TourSlider tours={tours} />
         <TourGrid tours={tours} />
-        <TourList tours={tours} />
+
+        {locations.map((loc, idx) => (
+          <Stack key={idx}>
+            <Title order={3}>
+              {loc}
+              {""} Tours
+            </Title>
+            <TourGrid location={loc} tours={tours} />
+          </Stack>
+        ))}
       </Container>
     </>
   );

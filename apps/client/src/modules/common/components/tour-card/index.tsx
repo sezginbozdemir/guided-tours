@@ -1,17 +1,10 @@
 "use client";
-import {
-  Box,
-  Image,
-  Text,
-  Badge,
-  Group,
-  Card,
-  Title,
-  Stack,
-  Button,
-} from "@mantine/core";
+import { Image, Group, Card, Title, Stack } from "@mantine/core";
 import classes from "./index.module.css";
 import { Tour } from "@/types/globals";
+import BookButton from "../buttons/book-now";
+import TourBadge from "../badge";
+import Link from "next/link";
 
 interface Props {
   tour: Tour;
@@ -20,32 +13,36 @@ interface Props {
 const TourCard: React.FC<Props> = ({ tour }) => {
   return (
     <Card className={classes.card}>
-      <Card.Section>
+      <Link className={classes.imgBox} href={`/tours/${tour.id}`}>
         <Image
           src={tour.images[0]}
           alt={tour.title}
-          height={150}
+          height={250}
           fit="cover"
           fallbackSrc="/hero/hero-01.png"
         />
-      </Card.Section>
-      <Stack gap={30} justify="space-between">
-        <Stack gap={0} mt={10}>
-          <Title order={4}>{tour.title}</Title>
+        {tour.label && (
+          <TourBadge text={tour.label} className={classes.badge} />
+        )}
+      </Link>
+
+      <Stack gap={0} h="100%" justify="space-between">
+        <Link href={`/tours/${tour.id}`}>
+          <Title mt={10} order={4}>
+            {tour.title}
+          </Title>
+        </Link>
+
+        <Stack>
           {tour.tags?.length > 0 && (
-            <Group mt="xs">
+            <Group gap={10} mt="xs">
               {tour.tags.map((tag, idx) => (
-                <Badge key={idx} className={classes.tags}>
-                  {tag}
-                </Badge>
+                <TourBadge text={tag} key={idx} className={classes.tags} />
               ))}
             </Group>
           )}
-        </Stack>
-
-        <Stack>
           <Title order={3}>${tour.price}</Title>
-          <Button>Book Now</Button>
+          <BookButton />
         </Stack>
       </Stack>
     </Card>

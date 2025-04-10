@@ -1,0 +1,15 @@
+.group {
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.paper {
+  flex: 1 1 400px;
+  max-width: 100%;
+  min-width: 280px;
+  height: auto;
+  box-sizing: border-box;
+}

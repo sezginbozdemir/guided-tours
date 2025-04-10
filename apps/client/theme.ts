@@ -3,7 +3,7 @@ import classes from "./theme.module.css";
 import { createTheme, Text, Title } from "@mantine/core";
 import "./src/styles/globals.css";
 export const theme = createTheme({
-  fontFamily: "Inria Sans",
+  fontFamily: "DM Sans",
   headings: {
     fontFamily: "Poppins",
   },

@@ -1,23 +1,22 @@
 .lineItem {
-  padding: 15px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 1rem;
   border: 1px solid var(--border);
   transition: all 0.3s ease;
   flex-wrap: nowrap;
-  height: 280px;
+  height: 250px;
   width: 100%;
 }
 
 .lineItem:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
 }
 
 .imageContainer {
   position: relative;
   width: 50%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 1rem;
   overflow: hidden;
 }
 

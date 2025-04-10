@@ -1,15 +1,14 @@
 "use client";
 import { Tour } from "@/types/globals";
 import classes from "./index.module.css";
-import TourCard from "../tour-card";
+import FeaturedCard from "./featuredCard";
 import { Carousel } from "@mantine/carousel";
-
 interface Props {
   tours: Tour[];
   label?: string;
 }
 
-const TourSlider: React.FC<Props> = ({ tours, label }) => {
+const FeaturedTours: React.FC<Props> = ({ tours, label }) => {
   const filteredTours = label
     ? tours.filter((tour) => tour.label?.toLowerCase() === label.toLowerCase())
     : tours;
@@ -17,21 +16,21 @@ const TourSlider: React.FC<Props> = ({ tours, label }) => {
     <Carousel
       mt={30}
       mb={30}
-      height={500}
-      slideSize="25%"
+      height={150}
+      slideSize="33.333333%"
       slideGap="sm"
       align="start"
-      slidesToScroll={2}
+      slidesToScroll={3}
+      dragFree
       loop
-      draggable
     >
       {filteredTours.map((tour, index) => (
         <Carousel.Slide key={index}>
-          <TourCard tour={tour} />
+          <FeaturedCard tour={tour} />
         </Carousel.Slide>
       ))}
     </Carousel>
   );
 };
 
-export default TourSlider;
+export default FeaturedTours;

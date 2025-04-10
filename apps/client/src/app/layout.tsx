@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
 import {
   ColorSchemeScript,
   mantineHtmlProps,
   MantineProvider,
 } from "@mantine/core";
 import { theme } from "../../theme";
-import { Poppins, Inria_Sans } from "next/font/google";
+import { Poppins, DM_Sans } from "next/font/google";
 import "../styles/globals.css";
 import Nav from "@/modules/common/components/nav";
+import Footer from "@/modules/common/components/footer";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -17,11 +19,11 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
 });
 
-const inriaSans = Inria_Sans({
-  variable: "--font-inria-sans",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
   display: "swap",
-  weight: ["300", "400", "700"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -44,10 +46,11 @@ export default function RootLayout({
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
-      <body className={`${poppins.variable} ${inriaSans.variable}`}>
+      <body className={`${poppins.variable} ${dmSans.variable}`}>
         <MantineProvider theme={theme}>
           <Nav />
           {children}
+          <Footer />
         </MantineProvider>
       </body>
     </html>

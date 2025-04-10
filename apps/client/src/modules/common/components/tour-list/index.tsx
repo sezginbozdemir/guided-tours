@@ -2,24 +2,31 @@
 import { useState, useRef } from "react";
 import { Tour } from "@/types/globals";
 import classes from "./index.module.css";
-import { Box, Stack } from "@mantine/core";
+import { Stack } from "@mantine/core";
 import TourLineItem from "./lineItem";
 import { Pagination, Group } from "@mantine/core";
 
 interface Props {
   tours: Tour[];
+  location?: string;
 }
 
-const TourList: React.FC<Props> = ({ tours }) => {
+const TourList: React.FC<Props> = ({ tours, location }) => {
   const [activePage, setActivePage] = useState(1);
   const listRef = useRef<HTMLDivElement>(null);
+  const filteredTours = location
+    ? tours.filter(
+        (tour) => tour.location?.toLowerCase() === location.toLowerCase()
+      )
+    : tours;
+
   const toursPerPage = 8;
 
-  const totalPages = Math.ceil(tours.length / toursPerPage);
+  const totalPages = Math.ceil(filteredTours.length / toursPerPage);
 
   const indexOfLastTour = activePage * toursPerPage;
   const indexOfFirstTour = indexOfLastTour - toursPerPage;
-  const currentTours = tours.slice(indexOfFirstTour, indexOfLastTour);
+  const currentTours = filteredTours.slice(indexOfFirstTour, indexOfLastTour);
 
   const handlePageChange = (page: number) => {
     setActivePage(page);
@@ -27,7 +34,7 @@ const TourList: React.FC<Props> = ({ tours }) => {
   };
 
   return (
-    <>
+    <Stack w="100%">
       <Stack ref={listRef} gap={20}>
         {currentTours.map((tour, index) => (
           <TourLineItem key={index} tour={tour} />
@@ -44,7 +51,7 @@ const TourList: React.FC<Props> = ({ tours }) => {
           />
         </Group>
       )}
-    </>
+    </Stack>
   );
 };
 

@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Tour } from "@/types/globals";
 import classes from "./index.module.css";
 import TourCard from "../tour-card";
@@ -7,17 +7,25 @@ import { Grid, Pagination, Box, Group } from "@mantine/core";
 
 interface Props {
   tours: Tour[];
-  toursPerPage?: number;
+  location?: string;
 }
 
-const TourGrid: React.FC<Props> = ({ tours, toursPerPage = 8 }) => {
+const TourGrid: React.FC<Props> = ({ tours, location }) => {
   const [activePage, setActivePage] = useState(1);
   const gridRef = useRef<HTMLDivElement>(null);
-  const totalPages = Math.ceil(tours.length / toursPerPage);
+
+  const filteredTours = location
+    ? tours.filter(
+        (tour) => tour.location?.toLowerCase() === location.toLowerCase()
+      )
+    : tours;
+  const toursPerPage = 8;
+
+  const totalPages = Math.ceil(filteredTours.length / toursPerPage);
 
   const indexOfLastTour = activePage * toursPerPage;
   const indexOfFirstTour = indexOfLastTour - toursPerPage;
-  const currentTours = tours.slice(indexOfFirstTour, indexOfLastTour);
+  const currentTours = filteredTours.slice(indexOfFirstTour, indexOfLastTour);
 
   const handlePageChange = (page: number) => {
     setActivePage(page);
@@ -26,7 +34,7 @@ const TourGrid: React.FC<Props> = ({ tours, toursPerPage = 8 }) => {
 
   return (
     <>
-      <Grid ref={gridRef} h={750} gutter="1.2rem">
+      <Grid ref={gridRef} gutter="1.2rem">
         {currentTours.map((tour, index) => (
           <Grid.Col key={index} span={{ base: 12, sm: 6, md: 4, lg: 3 }}>
             <TourCard tour={tour} />
@@ -35,7 +43,7 @@ const TourGrid: React.FC<Props> = ({ tours, toursPerPage = 8 }) => {
       </Grid>
 
       {totalPages > 1 && (
-        <Group justify="center" mt="2rem">
+        <Group justify="center" mt="5rem">
           <Pagination
             total={totalPages}
             value={activePage}
