@@ -1,229 +1,124 @@
 [
   {
-    "title": "Amazing Tour to Paris",
-    "location": "Paris, France",
-    "price": 999,
-    "tags": ["Adventure", "Culture", "Romantic"],
-    "images": ["/hero/hero-01.png", "/hero/hero-02.png"],
-    "description": "A wonderful 7-day tour through the streets of Paris.",
-    "shortDescription": "Explore Paris in 7 days",
-    "duration": "7 days",
+    "title": "Ephesus Historical Exploration",
+    "location": "Ephesus",
+    "price": 850,
+    "tags": ["History", "Culture", "Archaeology"],
+    "images": ["/hero/hero-02.png", "/hero/hero-01.png", "/hero/hero-03.png"],
+    "description": "<h2>Step Back in Time at Ephesus</h2><p>Explore one of the most important archaeological sites in the world, Ephesus. This tour takes you through its ancient streets, grand theatres, and sacred sites that date back thousands of years.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Arrive and explore the ancient city of <em>Ephesus</em>. Walk through its famous streets, admire the Library of Celsus, and see the impressive Temple of Artemis.</p><p><strong>Day 2:</strong> Visit the House of Virgin Mary and the Theatre of Ephesus. Learn about its rich history from expert guides.</p>",
+    "shortDescription": "Explore the ancient city of Ephesus",
+    "duration": "2 days",
+    "label": "Historical Gem",
     "tourDetails": {
-      "itinerary": ["Visit Eiffel Tower", "Cruise on the Seine"]
+      "itinerary": [
+        "Visit Ephesus Archaeological Site",
+        "Explore the Temple of Artemis",
+        "See the House of Virgin Mary",
+        "Visit the Theatre of Ephesus"
+      ],
+      "highlights": ["Ephesus", "Temple of Artemis", "House of Virgin Mary"],
+      "inclusions": [
+        "Accommodation",
+        "Meals (Breakfast and Dinner)",
+        "Guided Tour",
+        "Transport"
+      ],
+      "exclusions": ["Flights", "Personal Expenses", "Travel Insurance"],
+      "remarks": [
+        "Wear comfortable walking shoes",
+        "Dress modestly when visiting religious sites"
+      ]
     }
   },
   {
-    "title": "Safari in Kenya",
-    "location": "Nairobi, Kenya",
-    "price": 1500,
-    "tags": ["Wildlife", "Nature"],
-    "images": ["/hero/hero-02.png", "/hero/hero-03.png"],
-    "description": "Experience wildlife like never before in Kenya.",
-    "shortDescription": "A 5-day safari adventure",
+    "title": "Ephesus & Pamukkale Heritage Tour",
+    "location": "Ephesus",
+    "price": 1000,
+    "tags": ["History", "Nature", "Culture"],
+    "images": ["/hero/hero-02.png", "/hero/hero-01.png", "/hero/hero-03.png"],
+    "description": "<h2>Explore Ephesus and Pamukkale’s Natural Beauty</h2><p>Experience the rich history of Ephesus, followed by the natural wonders of Pamukkale. This tour offers the perfect blend of ancient culture and natural beauty.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Explore the ancient city of Ephesus, including its temples, the Celsus Library, and the Roman Theatre.</p><p><strong>Day 2:</strong> Travel to Pamukkale and relax in its thermal waters, visit Hierapolis, and explore the ancient ruins of the city.</p><p><strong>Day 3:</strong> Enjoy free time in Pamukkale to explore more or relax in the thermal pools before returning home.</p>",
+    "shortDescription": "A blend of history and natural beauty",
+    "duration": "3 days",
+    "label": "Cultural & Natural Heritage",
+    "tourDetails": {
+      "itinerary": [
+        "Visit Ephesus Archaeological Site",
+        "See the Celsus Library",
+        "Explore Pamukkale’s thermal waters",
+        "Visit Hierapolis"
+      ],
+      "highlights": ["Ephesus", "Pamukkale", "Hierapolis"],
+      "inclusions": [
+        "Accommodation",
+        "Meals (Breakfast and Dinner)",
+        "Guided Tour",
+        "Transport"
+      ],
+      "exclusions": ["Flights", "Personal Expenses", "Travel Insurance"],
+      "remarks": [
+        "Bring swimwear for Pamukkale",
+        "Comfortable shoes are recommended for both sites"
+      ]
+    }
+  },
+  {
+    "title": "Pamukkale Thermal Springs Tour",
+    "location": "Pamukkale",
+    "price": 700,
+    "tags": ["Nature", "Relaxation", "Wellness"],
+    "images": ["/hero/hero-02.png", "/hero/hero-01.png", "/hero/hero-03.png"],
+    "description": "<h2>Relax in the Thermal Waters of Pamukkale</h2><p>Discover the natural beauty of Pamukkale, known for its stunning white mineral terraces and warm thermal waters. This 3-day tour offers relaxation and exploration in one of Turkey’s most iconic natural landmarks.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Arrive and explore the famous travertine terraces of Pamukkale, known for their healing properties and breathtaking beauty.</p><p><strong>Day 2:</strong> Visit the ancient ruins of Hierapolis, an ancient spa town, and swim in the Cleopatra Pool.</p><p><strong>Day 3:</strong> Enjoy free time to relax or explore the area before departing.</p>",
+    "shortDescription": "Relax and rejuvenate in Pamukkale’s thermal springs",
+    "duration": "3 days",
+    "label": "Wellness Retreat",
+    "tourDetails": {
+      "itinerary": [
+        "Relax in Pamukkale's thermal pools",
+        "Visit Hierapolis and Cleopatra Pool",
+        "Explore the natural terraces"
+      ],
+      "highlights": ["Pamukkale", "Hierapolis", "Cleopatra Pool"],
+      "inclusions": [
+        "Accommodation",
+        "Meals (Breakfast and Dinner)",
+        "Guided Tour",
+        "Transport"
+      ],
+      "exclusions": ["Flights", "Personal Expenses", "Travel Insurance"],
+      "remarks": [
+        "Bring swimwear for the thermal pools",
+        "Comfortable shoes for walking around the terraces"
+      ]
+    }
+  },
+  {
+    "title": "Pamukkale & Ephesus Wonders",
+    "location": "Pamukkale",
+    "price": 1150,
+    "tags": ["Nature", "History", "Culture"],
+    "images": ["/hero/hero-02.png", "/hero/hero-01.png", "/hero/hero-03.png"],
+    "description": "<h2>The Wonders of Pamukkale and Ephesus</h2><p>This 5-day tour combines the historical marvels of Ephesus with the natural beauty of Pamukkale. From the ancient ruins to the healing thermal waters, this tour is the perfect combination of culture and nature.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Explore the ancient city of Ephesus, including the Temple of Artemis and the Library of Celsus.</p><p><strong>Day 2:</strong> Visit the House of Virgin Mary and the Theatre of Ephesus.</p><p><strong>Day 3:</strong> Travel to Pamukkale and experience its natural beauty. Relax in the thermal pools and explore the ancient ruins of Hierapolis.</p><p><strong>Day 4-5:</strong> Enjoy time in Pamukkale and explore the region further before returning home.</p>",
+    "shortDescription": "A tour of Ephesus and Pamukkale’s best highlights",
     "duration": "5 days",
-    "tourDetails": {
-      "itinerary": ["Day 1: Arrival", "Day 2-4: Safari", "Day 5: Departure"]
-    }
-  },
-  {
-    "title": "Tokyo City Tour",
-    "location": "Tokyo, Japan",
-    "price": 1200,
-    "tags": ["City", "Culture", "Technology"],
-    "images": ["/hero/hero-01.png", "/hero/hero-03.png"],
-    "description": "A 6-day exploration of Tokyo's technology and culture.",
-    "shortDescription": "Experience Tokyo's modern marvels",
-    "duration": "6 days",
+    "label": "History & Nature",
     "tourDetails": {
       "itinerary": [
-        "Visit Shibuya Crossing",
-        "Explore Akihabara",
-        "Relax at Meiji Shrine"
-      ]
-    }
-  },
-  {
-    "title": "Egyptian Pyramid Adventure",
-    "location": "Cairo, Egypt",
-    "price": 2000,
-    "tags": ["History", "Culture", "Adventure"],
-    "images": ["/hero/hero-03.png", "/hero/hero-01.png"],
-    "description": "A 7-day tour through ancient Egypt, exploring the pyramids.",
-    "shortDescription": "Discover the wonders of ancient Egypt",
-    "duration": "7 days",
-    "tourDetails": {
-      "itinerary": [
-        "Visit the Great Pyramid of Giza",
-        "Explore the Sphinx",
-        "Tour the Egyptian Museum"
-      ]
-    }
-  },
-  {
-    "title": "Rome in a Day",
-    "location": "Rome, Italy",
-    "price": 650,
-    "tags": ["History", "Culture"],
-    "images": ["/hero/hero-02.png", "/hero/hero-03.png"],
-    "description": "A one-day whirlwind tour through the eternal city of Rome.",
-    "shortDescription": "Discover Rome’s history in a day",
-    "duration": "1 day",
-    "tourDetails": {
-      "itinerary": [
-        "Visit the Colosseum",
-        "Tour the Vatican",
-        "Explore the Roman Forum"
-      ]
-    }
-  },
-  {
-    "title": "Grand Tour of Australia",
-    "location": "Sydney, Australia",
-    "price": 3500,
-    "tags": ["Adventure", "Nature"],
-    "images": ["/hero/hero-01.png", "/hero/hero-02.png"],
-    "description": "A 10-day tour through the highlights of Australia.",
-    "shortDescription": "Explore the natural wonders of Australia",
-    "duration": "10 days",
-    "tourDetails": {
-      "itinerary": [
-        "Explore Sydney Opera House",
-        "Snorkel in the Great Barrier Reef",
-        "Visit Uluru"
-      ]
-    }
-  },
-  {
-    "title": "New York City Extravaganza",
-    "location": "New York, USA",
-    "price": 1200,
-    "tags": ["City", "Culture"],
-    "images": ["/hero/hero-03.png", "/hero/hero-01.png"],
-    "description": "A 5-day journey through the Big Apple’s iconic landmarks.",
-    "shortDescription": "Experience the magic of New York City",
-    "duration": "5 days",
-    "tourDetails": {
-      "itinerary": [
-        "Visit Central Park",
-        "Explore the Statue of Liberty",
-        "Tour Times Square"
-      ]
-    }
-  },
-  {
-    "title": "Alaskan Wilderness Expedition",
-    "location": "Anchorage, Alaska",
-    "price": 2500,
-    "tags": ["Adventure", "Nature"],
-    "images": ["/hero/hero-02.png", "/hero/hero-03.png"],
-    "description": "A thrilling 8-day adventure in Alaska’s wilderness.",
-    "shortDescription": "Survive and explore Alaska’s wilderness",
-    "duration": "8 days",
-    "tourDetails": {
-      "itinerary": [
-        "Explore Denali National Park",
-        "Cruise the Inside Passage",
-        "Visit Juneau"
-      ]
-    }
-  },
-  {
-    "title": "Tropical Thailand Tour",
-    "location": "Bangkok, Thailand",
-    "price": 900,
-    "tags": ["Beach", "Adventure"],
-    "images": ["/hero/hero-03.png", "/hero/hero-01.png"],
-    "description": "A 7-day tour of Thailand’s beaches and temples.",
-    "shortDescription": "Relax and explore Thailand’s beauty",
-    "duration": "7 days",
-    "tourDetails": {
-      "itinerary": [
-        "Visit Phi Phi Islands",
-        "Explore ancient temples in Ayutthaya"
-      ]
-    }
-  },
-  {
-    "title": "Bali Bliss",
-    "location": "Bali, Indonesia",
-    "price": 800,
-    "tags": ["Beach", "Relaxation"],
-    "images": ["/hero/hero-02.png", "/hero/hero-03.png"],
-    "description": "A 5-day relaxing getaway in Bali.",
-    "shortDescription": "Relax and unwind in Bali",
-    "duration": "5 days",
-    "tourDetails": {
-      "itinerary": [
-        "Explore Ubud's rice terraces",
-        "Sunbathe at Nusa Dua Beach"
-      ]
-    }
-  },
-  {
-    "title": "Canadian Rockies Road Trip",
-    "location": "Banff, Canada",
-    "price": 1800,
-    "tags": ["Nature", "Adventure"],
-    "images": ["/hero/hero-01.png", "/hero/hero-02.png"],
-    "description": "A scenic 7-day road trip through the Canadian Rockies.",
-    "shortDescription": "Explore the beauty of the Canadian Rockies",
-    "duration": "7 days",
-    "tourDetails": {
-      "itinerary": [
-        "Visit Lake Louise",
-        "Tour Jasper National Park",
-        "Explore Banff National Park"
-      ]
-    }
-  },
-  {
-    "title": "Machu Picchu and Peru",
-    "location": "Cusco, Peru",
-    "price": 2200,
-    "tags": ["History", "Adventure"],
-    "images": ["/hero/hero-03.png", "/hero/hero-01.png"],
-    "description": "A 6-day tour of Peru, including Machu Picchu.",
-    "shortDescription": "Discover the mysteries of Peru",
-    "duration": "6 days",
-    "tourDetails": {
-      "itinerary": [
-        "Visit Sacred Valley",
-        "Hike to Machu Picchu",
-        "Explore Cusco"
-      ]
-    }
-  },
-  {
-    "title": "Iceland Adventure",
-    "location": "Reykjavik, Iceland",
-    "price": 1400,
-    "tags": ["Nature", "Adventure"],
-    "images": ["/hero/hero-02.png", "/hero/hero-03.png"],
-    "description": "An unforgettable 8-day journey through Iceland's landscapes.",
-    "shortDescription": "Explore Iceland’s stunning landscapes",
-    "duration": "8 days",
-    "tourDetails": {
-      "itinerary": [
-        "Visit the Blue Lagoon",
-        "Explore Golden Circle",
-        "Tour Vatnajökull National Park"
-      ]
-    }
-  },
-  {
-    "title": "Antarctic Expedition",
-    "location": "Ushuaia, Argentina",
-    "price": 5000,
-    "tags": ["Adventure", "Wildlife"],
-    "images": ["/hero/hero-01.png", "/hero/hero-02.png"],
-    "description": "An epic 12-day expedition to Antarctica.",
-    "shortDescription": "Embark on the adventure of a lifetime",
-    "duration": "12 days",
-    "tourDetails": {
-      "itinerary": [
-        "Cruise to Antarctic Peninsula",
-        "See penguins and seals",
-        "Visit Ushuaia"
+        "Explore Ephesus archaeological site",
+        "Visit the House of Virgin Mary",
+        "Relax in Pamukkale’s thermal waters",
+        "Visit Hierapolis"
+      ],
+      "highlights": ["Ephesus", "Pamukkale", "Hierapolis"],
+      "inclusions": [
+        "Accommodation",
+        "Meals (Breakfast and Dinner)",
+        "Guided Tour",
+        "Transport"
+      ],
+      "exclusions": ["Flights", "Personal Expenses", "Travel Insurance"],
+      "remarks": [
+        "Comfortable shoes for exploring ancient ruins",
+        "Swimwear for Pamukkale’s pools"
       ]
     }
   }

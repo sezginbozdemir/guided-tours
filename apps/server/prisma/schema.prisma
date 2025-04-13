@@ -12,6 +12,13 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+model Location {
+id Int @id @default(autoincrement())
+name String
+images String[]
+popular Boolean
+description String
+}
 
 
 model User {
@@ -20,16 +27,18 @@ email String @unique
 name String
 }
 model Tour {
-  id          Int      @id @default(autoincrement())
-  title       String
-  location    String
-  price       Float
-  tags        String[]
-  images      String[]
-  description String   
-  shortDescription String   
-  duration         String
-  tourDetails Json     
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id				Int      @id @default(autoincrement())
+  title				String
+  location			String
+  price				Float
+  tags				String[]
+  images			String[]
+  description		String   
+  shortDescription	String   
+  duration			String
+  tourDetails		Json     
+  label				String?
+  status            String   @default("active")
+  createdAt			DateTime @default(now())
+  updatedAt			DateTime @updatedAt
 }

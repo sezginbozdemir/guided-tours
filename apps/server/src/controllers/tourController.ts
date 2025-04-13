@@ -6,7 +6,14 @@ const prisma = new PrismaClient();
 class TourController {
   static async getTours(req: Request, res: Response) {
     try {
-      const tours = await prisma.tour.findMany();
+      const location = req.query.location as string | undefined;
+
+      const tours = await prisma.tour.findMany({
+        where: location
+          ? { location: { equals: location, mode: "insensitive" } }
+          : {},
+      });
+
       res.json(tours);
     } catch (error: any) {
       console.log(error);
@@ -15,7 +22,6 @@ class TourController {
         .json({ error: `Failed to fetch tours: ${error.message}` });
     }
   }
-
   static async createTour(req: Request, res: Response) {
     const {
       title,
@@ -27,6 +33,7 @@ class TourController {
       shortDescription,
       duration,
       tourDetails,
+      label,
     } = req.body;
     try {
       JSON.parse(tourDetails);
@@ -58,6 +65,7 @@ class TourController {
           shortDescription,
           duration,
           tourDetails: JSON.parse(tourDetails),
+          label: label || null,
         },
       });
       res.status(201).json(newTour);
@@ -65,6 +73,29 @@ class TourController {
       res
         .status(500)
         .json({ error: `Failed to create tour: ${error.message}` });
+    }
+  }
+  static async deleteTour(req: Request, res: Response) {
+    const { id } = req.params;
+    const numericId = Number(id);
+    try {
+      const tour = await prisma.tour.findUnique({
+        where: { id: numericId },
+      });
+
+      if (!tour) {
+        return res.status(404).json({ error: "Tour not found" });
+      }
+
+      await prisma.tour.delete({
+        where: { id: numericId },
+      });
+
+      res.status(200).json({ message: "Tour deleted successfully" });
+    } catch (error: any) {
+      res
+        .status(500)
+        .json({ error: `Failed to delete Tour: ${error.message}` });
     }
   }
 }
