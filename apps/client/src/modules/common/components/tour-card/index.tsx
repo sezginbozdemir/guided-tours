@@ -5,6 +5,7 @@ import { Tour } from "@/types/globals";
 import BookButton from "../buttons/book-now";
 import TourBadge from "../badge";
 import Link from "next/link";
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 interface Props {
   tour: Tour;
@@ -15,7 +16,7 @@ const TourCard: React.FC<Props> = ({ tour }) => {
     <Card className={classes.card}>
       <Link className={classes.imgBox} href={`/tours/${tour.id}`}>
         <Image
-          src={tour.images[0]}
+          src={`${API_URL}${tour.images[0]}`}
           alt={tour.title}
           height={250}
           fit="cover"

@@ -1,9 +1,10 @@
 import { Box, Container, Group, TextInput, Title } from "@mantine/core";
 import MenuItems from "../components/menu";
 import classes from "../index.module.css";
+import { Location } from "@/types/globals";
 
 interface Props {
-  locations: string[];
+  locations: Location[];
 }
 
 const NavTemplate = ({ locations }: Props) => {

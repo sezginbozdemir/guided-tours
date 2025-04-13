@@ -1,4 +1,3 @@
-// lib/data/tours.ts
 import axios from "axios";
 import { Tour } from "@/types/globals";
 

@@ -5,7 +5,7 @@ import { Box, Group, ActionIcon } from "@mantine/core";
 import Image from "next/image";
 import { Tour } from "@/types/globals";
 import { useState } from "react";
-
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 interface Props {
   tour: Tour;
 }
@@ -25,10 +25,14 @@ const ImageGallery = ({ tour }: Props) => {
   return (
     <Group h={500}>
       <Box className={classes.box1}>
-        <Image src={tour.images[0]} alt={tour.title} fill />
+        <Image src={`${API_URL}${tour.images[0]}`} alt={tour.title} fill />
       </Box>
       <Box className={classes.box2}>
-        <Image src={tour.images[currentIndex]} alt={tour.title} fill />
+        <Image
+          src={`${API_URL}${tour.images[currentIndex]}`}
+          alt={tour.title}
+          fill
+        />
         <ActionIcon
           variant="transparent"
           className={classes.leftButton}

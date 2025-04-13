@@ -8,13 +8,13 @@ export const metadata: Metadata = {
 };
 
 interface Props {
-  searchParams: {
+  searchParams: Promise<{
     location?: string;
-  };
+  }>;
 }
 
 export default async function ToursPage({ searchParams }: Props) {
-  const location = searchParams.location;
+  const { location } = await searchParams;
   const tours = await fetchAllTours(location);
   return <ToursTemplate location={location} tours={tours} />;
 }

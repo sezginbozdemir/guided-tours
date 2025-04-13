@@ -10,6 +10,7 @@ import { BsClock } from "react-icons/bs";
 import Link from "next/link";
 import BookButton from "../buttons/book-now";
 import { FaCircleDot } from "react-icons/fa6";
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 interface Props {
   tour: Tour;
@@ -20,7 +21,7 @@ const TourLineItem: React.FC<Props> = ({ tour }) => {
     <Group className={classes.lineItem}>
       <Link href={`/tours/${tour.id}`} className={classes.imageContainer}>
         <Image
-          src={tour.images[0]}
+          src={`${API_URL}${tour.images[0]}`}
           alt={tour.title}
           fill
           className={classes.image}
