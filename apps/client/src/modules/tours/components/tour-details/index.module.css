@@ -1,15 +1,55 @@
-.group {
-  margin-top: 1rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
+.container {
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background-color: var(--mantine-color-gray-0);
 }
 
-.paper {
-  flex: 1 1 400px;
-  max-width: 100%;
-  min-width: 280px;
-  height: auto;
-  box-sizing: border-box;
+.accordion {
+  width: 100%;
+}
+
+.item {
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.control {
+  padding: 0.5rem;
+}
+
+.control:hover {
+  background-color: var(--mantine-color-gray-1);
+}
+
+.panel {
+  padding: 0.3rem;
+}
+
+.bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #b7b7b7;
+}
+
+.infoIcon {
+  color: var(--mantine-color-blue-6);
+}
+
+.bookButton {
+  background-color: var(--mantine-color-blue-6);
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bookButton:hover {
+  background-color: var(--mantine-color-green-7);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }

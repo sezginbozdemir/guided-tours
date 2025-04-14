@@ -16,6 +16,7 @@ const DestinationsSlider = ({ locations }: Props) => {
       slidesToScroll={2}
       loop
       draggable
+      classNames={{ control: classes.control, viewport: classes.carousel }}
     >
       {locations.map((loc, idx) => (
         <Carousel.Slide key={idx}>

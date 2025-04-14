@@ -27,7 +27,7 @@ const TourCard: React.FC<Props> = ({ tour }) => {
         )}
       </Link>
 
-      <Stack gap={0} h="100%" justify="space-between">
+      <Stack px={10} gap={0} h="100%" justify="space-between">
         <Link href={`/tours/${tour.id}`}>
           <Title mt={10} order={4}>
             {tour.title}

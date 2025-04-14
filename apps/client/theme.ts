@@ -1,7 +1,8 @@
 "use client";
 import classes from "./theme.module.css";
-import { createTheme, Text, Title } from "@mantine/core";
+import { Breadcrumbs, createTheme, Text, Title } from "@mantine/core";
 import "./src/styles/globals.css";
+import { Carousel } from "@mantine/carousel";
 export const theme = createTheme({
   fontFamily: "DM Sans",
   headings: {
@@ -24,6 +25,17 @@ export const theme = createTheme({
     Text: Text.extend({
       classNames: {
         root: classes.text,
+      },
+    }),
+    Carousel: Carousel.extend({
+      classNames: {
+        control: classes.carouselControl,
+        root: classes.carouselRoot,
+      },
+    }),
+    Breadcrumbs: Breadcrumbs.extend({
+      classNames: {
+        root: classes.breadcrumbs,
       },
     }),
   },

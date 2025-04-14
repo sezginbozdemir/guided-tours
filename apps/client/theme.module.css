@@ -9,3 +9,28 @@
     color: var(--mantine-color-dimmed);
   }
 }
+
+.carouselControl {
+  background-color: var(--foreground);
+  color: var(--background);
+  border: none;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+.carouselControl:first-of-type {
+  transform: translateX(-20px);
+}
+.carouselControl:last-of-type {
+  transform: translateX(20px);
+}
+.carouselRoot:hover .carouselControl {
+  opacity: 1;
+  transform: translateX(0);
+}
+.breadcrumbs {
+  margin-top: 15px;
+}

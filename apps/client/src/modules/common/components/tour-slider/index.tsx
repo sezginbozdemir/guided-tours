@@ -7,12 +7,17 @@ import { Carousel } from "@mantine/carousel";
 interface Props {
   tours: Tour[];
   label?: string;
+  location?: string;
 }
 
-const TourSlider: React.FC<Props> = ({ tours, label }) => {
+const TourSlider: React.FC<Props> = ({ location, tours, label }) => {
   const filteredTours = label
     ? tours.filter((tour) => tour.label?.toLowerCase() === label.toLowerCase())
-    : tours;
+    : location
+      ? tours.filter(
+          (tour) => tour.location.toLowerCase() === location.toLowerCase()
+        )
+      : tours;
   return (
     <Carousel
       mt={30}
@@ -24,6 +29,12 @@ const TourSlider: React.FC<Props> = ({ tours, label }) => {
       slidesToScroll={2}
       loop
       draggable
+      withIndicators
+      classNames={{
+        control: classes.control,
+        indicators: classes.indicators,
+        indicator: classes.indicator,
+      }}
     >
       {filteredTours.map((tour, index) => (
         <Carousel.Slide key={index}>

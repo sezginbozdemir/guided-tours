@@ -31,5 +31,5 @@ export default async function TourPage({ params }: Props) {
     return notFound();
   }
 
-  return <TourTemplate tour={tour} />;
+  return <TourTemplate tours={tours} tour={tour} />;
 }

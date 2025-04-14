@@ -1,1 +1,12 @@
-
+.indicators {
+  top: -45px;
+  right: 10px;
+  inset-inline-start: auto;
+}
+.indicator {
+  background-color: gray;
+}
+.control {
+  width: 3rem;
+  height: 3rem;
+}

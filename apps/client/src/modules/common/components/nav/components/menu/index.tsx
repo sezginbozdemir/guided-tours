@@ -12,7 +12,7 @@ interface Props {
 const links = [
   { name: "Home", path: "/" },
   { name: "Popular Tours", type: "dropdown" },
-  { name: "Turkey Tours", path: "/tours?location=turkey" },
+  { name: "Destinations", type: "destinations" },
   { name: "Other Tours", type: "dropdown-dynamic" },
   { name: "Contact", path: "/contact" },
 ];
@@ -28,7 +28,7 @@ const MenuItems = ({ locations }: Props) => {
           return (
             <Menu key={index} trigger="hover">
               <Menu.Target>
-                <Title order={5}>
+                <Title className={classes.targetGroup} order={5}>
                   {link.name} <FiChevronDown size={20} />
                 </Title>
               </Menu.Target>
@@ -45,12 +45,30 @@ const MenuItems = ({ locations }: Props) => {
             </Menu>
           );
         }
+        if (link.type === "destinations") {
+          return (
+            <Menu key={index} trigger="hover">
+              <Menu.Target>
+                <Title className={classes.targetGroup} order={5}>
+                  {link.name} <FiChevronDown size={20} />
+                </Title>
+              </Menu.Target>
+              <Menu.Dropdown>
+                {locations.map((loc, idx) => (
+                  <Link key={idx} href={`/destinations/${loc.id}`}>
+                    <Menu.Item>{loc.name}</Menu.Item>
+                  </Link>
+                ))}
+              </Menu.Dropdown>
+            </Menu>
+          );
+        }
 
         if (link.type === "dropdown-dynamic") {
           return (
             <Menu key={index} trigger="hover">
               <Menu.Target>
-                <Title order={5}>
+                <Title className={classes.targetGroup} order={5}>
                   {link.name} <FiChevronDown size={20} />
                 </Title>
               </Menu.Target>

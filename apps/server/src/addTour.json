@@ -4,11 +4,11 @@
     "location": "Ephesus",
     "price": 850,
     "tags": ["History", "Culture", "Archaeology"],
-    "images": ["/hero/hero-02.png", "/hero/hero-01.png", "/hero/hero-03.png"],
+    "images": ["/static/test1.png", "/static/test2.png", "/static/test3.png"],
     "description": "<h2>Step Back in Time at Ephesus</h2><p>Explore one of the most important archaeological sites in the world, Ephesus. This tour takes you through its ancient streets, grand theatres, and sacred sites that date back thousands of years.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Arrive and explore the ancient city of <em>Ephesus</em>. Walk through its famous streets, admire the Library of Celsus, and see the impressive Temple of Artemis.</p><p><strong>Day 2:</strong> Visit the House of Virgin Mary and the Theatre of Ephesus. Learn about its rich history from expert guides.</p>",
     "shortDescription": "Explore the ancient city of Ephesus",
     "duration": "2 days",
-    "label": "Historical Gem",
+    "label": "Popular",
     "tourDetails": {
       "itinerary": [
         "Visit Ephesus Archaeological Site",
@@ -31,94 +31,566 @@
     }
   },
   {
-    "title": "Ephesus & Pamukkale Heritage Tour",
-    "location": "Ephesus",
-    "price": 1000,
-    "tags": ["History", "Nature", "Culture"],
-    "images": ["/hero/hero-02.png", "/hero/hero-01.png", "/hero/hero-03.png"],
-    "description": "<h2>Explore Ephesus and Pamukkale’s Natural Beauty</h2><p>Experience the rich history of Ephesus, followed by the natural wonders of Pamukkale. This tour offers the perfect blend of ancient culture and natural beauty.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Explore the ancient city of Ephesus, including its temples, the Celsus Library, and the Roman Theatre.</p><p><strong>Day 2:</strong> Travel to Pamukkale and relax in its thermal waters, visit Hierapolis, and explore the ancient ruins of the city.</p><p><strong>Day 3:</strong> Enjoy free time in Pamukkale to explore more or relax in the thermal pools before returning home.</p>",
-    "shortDescription": "A blend of history and natural beauty",
+    "title": "Mystical Konya Journey",
+    "location": "Konya",
+    "price": 750,
+    "tags": ["Spirituality", "Culture", "History"],
+    "images": ["/static/test4.png", "/static/test5.png", "/static/test6.png"],
+    "description": "<h2>Discover the Spiritual Heart of Turkey</h2><p>Experience the mystical city of Konya, the home of the whirling dervishes and Rumi's final resting place. This tour connects you with centuries of Sufi tradition and Turkish Islamic heritage.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Visit the <em>Mevlana Museum</em> and learn about the life of Rumi, one of the world's greatest poets and spiritual leaders.</p><p><strong>Day 2:</strong> Attend an authentic Whirling Dervish ceremony and explore the ancient Seljuk architecture throughout the city.</p>",
+    "shortDescription": "Experience the mystical city of Konya",
+    "duration": "2 days",
+    "label": "Cultural",
+    "tourDetails": {
+      "itinerary": [
+        "Visit Mevlana Museum",
+        "Attend Whirling Dervish ceremony",
+        "Explore Alaeddin Hill",
+        "Tour Karatay Medrese"
+      ],
+      "highlights": [
+        "Mevlana Museum",
+        "Whirling Dervish Ceremony",
+        "Seljuk Architecture"
+      ],
+      "inclusions": [
+        "Accommodation",
+        "Meals (Breakfast and Dinner)",
+        "Guided Tour",
+        "Transport"
+      ],
+      "exclusions": ["Flights", "Personal Expenses", "Travel Insurance"],
+      "remarks": [
+        "Dress modestly when visiting religious sites",
+        "Photography may be restricted in certain areas"
+      ]
+    }
+  },
+  {
+    "title": "Istanbul: Bridge Between Continents",
+    "location": "Istanbul",
+    "price": 1200,
+    "tags": ["Culture", "History", "Cuisine"],
+    "images": ["/static/test7.png", "/static/test8.png", "/static/test9.png"],
+    "description": "<h2>Experience the Magic of Istanbul</h2><p>Straddling two continents, Istanbul offers a unique blend of European and Asian cultures. Explore its magnificent mosques, bustling bazaars, and enjoy the vibrant atmosphere of this ancient city.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Visit the iconic <em>Hagia Sophia</em> and <em>Blue Mosque</em> in the historic Sultanahmet district.</p><p><strong>Day 2:</strong> Explore Topkapi Palace and enjoy a Bosphorus cruise witnessing the city from both European and Asian shores.</p><p><strong>Day 3:</strong> Experience the Grand Bazaar and Spice Market, followed by a traditional Turkish hamam experience.</p>",
+    "shortDescription": "Discover the wonders of Istanbul",
     "duration": "3 days",
-    "label": "Cultural & Natural Heritage",
+    "label": "Best Seller",
+    "tourDetails": {
+      "itinerary": [
+        "Tour Hagia Sophia and Blue Mosque",
+        "Visit Topkapi Palace",
+        "Enjoy Bosphorus Cruise",
+        "Explore Grand Bazaar and Spice Market",
+        "Experience traditional Turkish hamam"
+      ],
+      "highlights": ["Hagia Sophia", "Bosphorus Cruise", "Grand Bazaar"],
+      "inclusions": [
+        "Accommodation",
+        "Daily Breakfast",
+        "Guided Tours",
+        "Bosphorus Cruise",
+        "Transport"
+      ],
+      "exclusions": ["Flights", "Personal Expenses", "Travel Insurance"],
+      "remarks": [
+        "Comfortable walking shoes recommended",
+        "Dress modestly when visiting mosques"
+      ]
+    }
+  },
+  {
+    "title": "Gallipoli Battlefield Tour",
+    "location": "Gelibolu",
+    "price": 680,
+    "tags": ["History", "Memorial", "Education"],
+    "images": ["/static/test10.png", "/static/test1.png", "/static/test2.png"],
+    "description": "<h2>Honor the Fallen at Gallipoli</h2><p>Take a poignant journey through the Gallipoli Peninsula, site of one of World War I's most significant campaigns. This tour offers profound insights into the ANZAC legend and the birth of modern Turkey.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Visit ANZAC Cove, Lone Pine Australian Memorial, and the 57th Regiment Turkish Memorial.</p><p><strong>Day 2:</strong> Explore Chunuk Bair New Zealand Memorial, Turkish trenches, and the Kabatepe War Museum.</p>",
+    "shortDescription": "Journey through the historic Gallipoli battlefields",
+    "duration": "2 days",
+    "label": "Educational",
+    "tourDetails": {
+      "itinerary": [
+        "Visit ANZAC Cove",
+        "Explore Lone Pine Memorial",
+        "Tour Chunuk Bair",
+        "Visit Kabatepe War Museum"
+      ],
+      "highlights": ["ANZAC Cove", "War Memorials", "Historical Battlefields"],
+      "inclusions": [
+        "Accommodation",
+        "Meals (Breakfast and Lunch)",
+        "Expert Historical Guide",
+        "Transport"
+      ],
+      "exclusions": ["Flights", "Personal Expenses", "Travel Insurance"],
+      "remarks": [
+        "Comfortable walking shoes essential",
+        "Tour involves moderate walking",
+        "Weather appropriate clothing recommended"
+      ]
+    }
+  },
+  {
+    "title": "Eskisehir: City of Innovation",
+    "location": "Eskisehir",
+    "price": 580,
+    "tags": ["Culture", "Modern", "University"],
+    "images": ["/static/test3.png", "/static/test4.png", "/static/test5.png"],
+    "description": "<h2>Discover Turkey's Most Livable City</h2><p>Known as the 'Venice of Turkey', Eskisehir combines traditional charm with modern innovation. Experience its beautiful canals, thriving university culture, and unique blend of Ottoman and European influences.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Explore Odunpazarı historical district with its colorful Ottoman houses and visit the Museum of Modern Glass Art.</p><p><strong>Day 2:</strong> Enjoy a boat trip along the Porsuk River and visit Eskisehir's famous theme park, Sazova Science, Art and Culture Park.</p>",
+    "shortDescription": "Experience Eskisehir's unique blend of old and new",
+    "duration": "2 days",
+    "label": "Hidden Gem",
+    "tourDetails": {
+      "itinerary": [
+        "Tour Odunpazarı Historical District",
+        "Visit Museum of Modern Glass Art",
+        "Enjoy Porsuk River boat trip",
+        "Explore Sazova Science Park"
+      ],
+      "highlights": ["Odunpazarı", "Porsuk River", "Modern Glass Art Museum"],
+      "inclusions": [
+        "Accommodation",
+        "Meals (Breakfast)",
+        "Guided Tours",
+        "River Cruise",
+        "Transport"
+      ],
+      "exclusions": ["Flights", "Personal Expenses", "Travel Insurance"],
+      "remarks": [
+        "Ideal for all age groups",
+        "Combination of walking and transport"
+      ]
+    }
+  },
+  {
+    "title": "Ultimate Turkey Adventure",
+    "location": "Turkey",
+    "price": 2800,
+    "tags": ["Adventure", "Culture", "History"],
+    "images": ["/static/test6.png", "/static/test7.png", "/static/test8.png"],
+    "description": "<h2>From Coast to Highlands: The Complete Turkish Experience</h2><p>This comprehensive tour takes you through Turkey's most iconic destinations. Journey from Istanbul's bustling markets to Cappadocia's otherworldly landscapes and the turquoise coast of the Mediterranean.</p><h3>Highlights of Your Journey</h3><p><strong>Days 1-2:</strong> Explore Istanbul's historic sites and vibrant culture.</p><p><strong>Days 3-4:</strong> Discover the ancient treasures of Ephesus.</p><p><strong>Days 5-6:</strong> Marvel at Pamukkale's white terraces and ancient Hierapolis.</p><p><strong>Days 7-8:</strong> Experience the unique landscapes and balloon rides of Cappadocia.</p><p><strong>Days 9-10:</strong> Relax at the beautiful beaches of Antalya.</p>",
+    "shortDescription": "Experience the best of Turkey in one journey",
+    "duration": "10 days",
+    "label": "Premium",
+    "tourDetails": {
+      "itinerary": [
+        "Tour Istanbul's iconic sites",
+        "Explore ancient Ephesus",
+        "Visit Pamukkale's white terraces",
+        "Experience Cappadocia's unique landscape",
+        "Relax at Antalya's beautiful beaches"
+      ],
+      "highlights": [
+        "Istanbul",
+        "Ephesus",
+        "Pamukkale",
+        "Cappadocia",
+        "Antalya"
+      ],
+      "inclusions": [
+        "Luxury Accommodation",
+        "All Meals",
+        "Private Guided Tours",
+        "Domestic Flights",
+        "All Transport"
+      ],
+      "exclusions": [
+        "International Flights",
+        "Personal Expenses",
+        "Optional Activities"
+      ],
+      "remarks": [
+        "Suitable for all fitness levels",
+        "Optional hot air balloon ride available",
+        "Customizations available upon request"
+      ]
+    }
+  },
+  {
+    "title": "Cappadocia Wonderland",
+    "location": "Cappadocia",
+    "price": 950,
+    "tags": ["Adventure", "Nature", "Culture"],
+    "images": ["/static/test9.png", "/static/test10.png", "/static/test1.png"],
+    "description": "<h2>Explore Turkey's Fairy Tale Landscape</h2><p>Journey through the magical region of Cappadocia, famous for its unique 'fairy chimney' rock formations, ancient cave dwellings, and spectacular hot air balloon rides at dawn.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Experience a breathtaking hot air balloon ride at sunrise over the unique lunar landscape.</p><p><strong>Day 2:</strong> Explore the Göreme Open Air Museum with its ancient rock-cut churches and stunning Byzantine frescoes.</p><p><strong>Day 3:</strong> Discover underground cities and hike through the Rose Valley, followed by a traditional pottery workshop in Avanos.</p>",
+    "shortDescription": "Marvel at Cappadocia's unique landscapes",
+    "duration": "3 days",
+    "label": "Most Popular",
+    "tourDetails": {
+      "itinerary": [
+        "Hot air balloon ride at sunrise",
+        "Visit Göreme Open Air Museum",
+        "Explore underground cities",
+        "Hike through Rose Valley",
+        "Attend pottery workshop in Avanos"
+      ],
+      "highlights": [
+        "Hot Air Balloon Ride",
+        "Göreme Open Air Museum",
+        "Underground Cities"
+      ],
+      "inclusions": [
+        "Cave Hotel Accommodation",
+        "Daily Breakfast",
+        "Hot Air Balloon Ride",
+        "Guided Tours",
+        "Transport"
+      ],
+      "exclusions": [
+        "Flights to Cappadocia",
+        "Personal Expenses",
+        "Travel Insurance"
+      ],
+      "remarks": [
+        "Early morning start for balloon ride",
+        "Comfortable walking shoes essential",
+        "Weather may affect balloon ride schedule"
+      ]
+    }
+  },
+  {
+    "title": "Antalya: Turquoise Coast Paradise",
+    "location": "Antalya",
+    "price": 1100,
+    "tags": ["Beach", "History", "Luxury"],
+    "images": ["/static/test2.png", "/static/test3.png", "/static/test4.png"],
+    "description": "<h2>Sun, Sea and Ancient Wonders</h2><p>Experience the perfect blend of relaxation and exploration on Turkey's stunning Mediterranean coast. Antalya offers pristine beaches, ancient ruins, and luxurious resorts all in one spectacular setting.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Explore Antalya's charming old town, Kaleiçi, with its Ottoman mansions and Roman harbor.</p><p><strong>Day 2:</strong> Visit the ancient city of Perge and the spectacular Düden Waterfalls.</p><p><strong>Day 3:</strong> Enjoy a boat trip along the coast with swimming opportunities in crystal-clear waters.</p><p><strong>Day 4:</strong> Relax at one of Antalya's premium beaches and enjoy optional water sports activities.</p>",
+    "shortDescription": "Relax and explore on Turkey's Mediterranean coast",
+    "duration": "4 days",
+    "label": "Luxury",
+    "tourDetails": {
+      "itinerary": [
+        "Tour Kaleiçi old town",
+        "Visit ancient city of Perge",
+        "See Düden Waterfalls",
+        "Enjoy coastal boat trip",
+        "Relax at premium beaches"
+      ],
+      "highlights": [
+        "Kaleiçi Old Town",
+        "Ancient Perge",
+        "Mediterranean Beaches"
+      ],
+      "inclusions": [
+        "Premium Resort Accommodation",
+        "Daily Breakfast and Dinner",
+        "Guided Tours",
+        "Boat Trip",
+        "Airport Transfers"
+      ],
+      "exclusions": ["Flights", "Personal Expenses", "Optional Activities"],
+      "remarks": [
+        "Sunscreen and beachwear essential",
+        "Optional water sports available",
+        "Perfect for families and couples"
+      ]
+    }
+  },
+  {
+    "title": "Göbeklitepe: Cradle of Civilization",
+    "location": "Gobeklitepe",
+    "price": 780,
+    "tags": ["Archaeology", "History", "Education"],
+    "images": ["/static/test5.png", "/static/test6.png", "/static/test7.png"],
+    "description": "<h2>Discover the World's Oldest Temple</h2><p>Journey to southeastern Turkey to visit Göbeklitepe, a revolutionary archaeological discovery that has changed our understanding of human history. Dating back to 10,000 BCE, this site predates Stonehenge by 6,000 years.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Arrive in Şanlıurfa and visit the Archaeological Museum featuring artifacts from Göbeklitepe.</p><p><strong>Day 2:</strong> Full day exploration of the Göbeklitepe archaeological site with expert archaeologist guides.</p><p><strong>Day 3:</strong> Visit nearby Harran with its unique beehive houses and ancient university.</p>",
+    "shortDescription": "Explore the world's oldest known temple complex",
+    "duration": "3 days",
+    "label": "Educational",
+    "tourDetails": {
+      "itinerary": [
+        "Visit Şanlıurfa Archaeological Museum",
+        "Guided tour of Göbeklitepe site",
+        "Explore Harran ancient city",
+        "Visit Balıklıgöl (Pool of Sacred Fish)"
+      ],
+      "highlights": [
+        "Göbeklitepe Archaeological Site",
+        "Şanlıurfa Museum",
+        "Harran"
+      ],
+      "inclusions": [
+        "Accommodation",
+        "Meals (Breakfast and Lunch)",
+        "Expert Archaeological Guides",
+        "All Transport",
+        "Site Entrance Fees"
+      ],
+      "exclusions": [
+        "Flights to Şanlıurfa",
+        "Personal Expenses",
+        "Travel Insurance"
+      ],
+      "remarks": [
+        "Moderate fitness level required",
+        "Hat and sunscreen recommended",
+        "Weather appropriate clothing essential"
+      ]
+    }
+  },
+  {
+    "title": "Pamukkale & Hierapolis Discovery",
+    "location": "Pamukkale",
+    "price": 720,
+    "tags": ["Nature", "History", "Wellness"],
+    "images": ["/static/test8.png", "/static/test9.png", "/static/test10.png"],
+    "description": "<h2>Natural Wonders and Ancient Splendors</h2><p>Marvel at the stunning white terraces of Pamukkale ('Cotton Castle') and the adjacent ancient city of Hierapolis. This UNESCO World Heritage site combines natural beauty with fascinating history.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Explore the brilliant white travertine terraces of Pamukkale and bathe in the mineral-rich thermal waters.</p><p><strong>Day 2:</strong> Discover the ancient city of Hierapolis with its well-preserved theatre, necropolis, and the sacred Cleopatra's Pool.</p>",
+    "shortDescription": "Explore the white terraces of Pamukkale",
+    "duration": "2 days",
+    "label": "Natural Wonder",
+    "tourDetails": {
+      "itinerary": [
+        "Visit Pamukkale white terraces",
+        "Bathe in thermal pools",
+        "Explore ancient Hierapolis",
+        "Visit Cleopatra's Pool"
+      ],
+      "highlights": [
+        "White Travertine Terraces",
+        "Ancient Hierapolis",
+        "Thermal Pools"
+      ],
+      "inclusions": [
+        "Accommodation",
+        "Meals (Breakfast)",
+        "Guided Tours",
+        "Transport",
+        "Entrance Fees"
+      ],
+      "exclusions": [
+        "Flights",
+        "Personal Expenses",
+        "Cleopatra's Pool Entry Fee"
+      ],
+      "remarks": [
+        "Bring swimwear for thermal pools",
+        "Walking barefoot required on terraces",
+        "Sun protection essential"
+      ]
+    }
+  },
+  {
+    "title": "Troy: Myth and Reality",
+    "location": "Troy",
+    "price": 650,
+    "tags": ["Archaeology", "Mythology", "History"],
+    "images": ["/static/test1.png", "/static/test2.png", "/static/test3.png"],
+    "description": "<h2>Journey to the Legendary City</h2><p>Step into the world of Homer's Iliad at the archaeological site of Troy. Discover the reality behind the legend of the Trojan War and the famous Trojan Horse in this UNESCO World Heritage site.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Explore the archaeological site of Troy with its nine different settlement layers spanning 3,500 years of history.</p><p><strong>Day 2:</strong> Visit the Troy Museum housing artifacts from excavations and learn about the separation of myth from historical reality.</p>",
+    "shortDescription": "Discover the legendary city of Troy",
+    "duration": "2 days",
+    "label": "Historical",
+    "tourDetails": {
+      "itinerary": [
+        "Tour Troy archaeological site",
+        "Visit Troy Museum",
+        "See the replica Trojan Horse",
+        "Explore nearby Çanakkale"
+      ],
+      "highlights": [
+        "Troy Archaeological Site",
+        "Troy Museum",
+        "Trojan Horse Replica"
+      ],
+      "inclusions": [
+        "Accommodation in Çanakkale",
+        "Meals (Breakfast)",
+        "Expert Archaeological Guide",
+        "Transport",
+        "Entrance Fees"
+      ],
+      "exclusions": ["Flights", "Personal Expenses", "Travel Insurance"],
+      "remarks": [
+        "Moderate walking required",
+        "Sun protection recommended",
+        "Can be combined with Gallipoli tour"
+      ]
+    }
+  },
+  {
+    "title": "Ancient Treasures of Ephesus & Pamukkale",
+    "location": "Ephesus",
+    "price": 1050,
+    "tags": ["History", "Culture", "Nature"],
+    "images": ["/static/test4.png", "/static/test5.png", "/static/test6.png"],
+    "description": "<h2>Two UNESCO Wonders in One Journey</h2><p>Combine the magnificent ancient city of Ephesus with the stunning natural terraces of Pamukkale on this comprehensive tour of Turkey's most impressive UNESCO World Heritage sites.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1-2:</strong> Explore ancient Ephesus with its well-preserved Library of Celsus, Grand Theatre, and Temple of Artemis.</p><p><strong>Day 3-4:</strong> Marvel at Pamukkale's white calcium terraces and explore the ancient ruins of Hierapolis.</p>",
+    "shortDescription": "Experience two UNESCO sites in one journey",
+    "duration": "4 days",
+    "label": "UNESCO Special",
     "tourDetails": {
       "itinerary": [
         "Visit Ephesus Archaeological Site",
-        "See the Celsus Library",
-        "Explore Pamukkale’s thermal waters",
-        "Visit Hierapolis"
+        "Explore Temple of Artemis",
+        "Tour Pamukkale's white terraces",
+        "Discover ancient Hierapolis"
       ],
-      "highlights": ["Ephesus", "Pamukkale", "Hierapolis"],
+      "highlights": [
+        "Ephesus Library of Celsus",
+        "Pamukkale Terraces",
+        "Hierapolis"
+      ],
       "inclusions": [
-        "Accommodation",
-        "Meals (Breakfast and Dinner)",
-        "Guided Tour",
-        "Transport"
+        "Premium Accommodation",
+        "Daily Breakfast and Dinner",
+        "Expert Guides",
+        "Luxury Transport",
+        "All Entrance Fees"
       ],
-      "exclusions": ["Flights", "Personal Expenses", "Travel Insurance"],
+      "exclusions": ["Flights", "Personal Expenses", "Optional Activities"],
       "remarks": [
-        "Bring swimwear for Pamukkale",
-        "Comfortable shoes are recommended for both sites"
+        "Comfortable walking shoes essential",
+        "Swimwear needed for Pamukkale",
+        "Moderate fitness level recommended"
       ]
     }
   },
   {
-    "title": "Pamukkale Thermal Springs Tour",
-    "location": "Pamukkale",
-    "price": 700,
-    "tags": ["Nature", "Relaxation", "Wellness"],
-    "images": ["/hero/hero-02.png", "/hero/hero-01.png", "/hero/hero-03.png"],
-    "description": "<h2>Relax in the Thermal Waters of Pamukkale</h2><p>Discover the natural beauty of Pamukkale, known for its stunning white mineral terraces and warm thermal waters. This 3-day tour offers relaxation and exploration in one of Turkey’s most iconic natural landmarks.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Arrive and explore the famous travertine terraces of Pamukkale, known for their healing properties and breathtaking beauty.</p><p><strong>Day 2:</strong> Visit the ancient ruins of Hierapolis, an ancient spa town, and swim in the Cleopatra Pool.</p><p><strong>Day 3:</strong> Enjoy free time to relax or explore the area before departing.</p>",
-    "shortDescription": "Relax and rejuvenate in Pamukkale’s thermal springs",
+    "title": "Turkish Delights Culinary Tour",
+    "location": "Istanbul",
+    "price": 890,
+    "tags": ["Culinary", "Culture", "Foodie"],
+    "images": ["/static/test7.png", "/static/test8.png", "/static/test9.png"],
+    "description": "<h2>Taste the Flavors of Turkey</h2><p>Embark on a gastronomic adventure through Istanbul's rich culinary landscape. From street food to fine dining, discover the diverse flavors that make Turkish cuisine one of the world's most celebrated.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Explore the Spice Bazaar and participate in a cooking class learning classic Turkish dishes.</p><p><strong>Day 2:</strong> Food tour through different neighborhoods, sampling street food specialties and visiting local eateries.</p><p><strong>Day 3:</strong> Experience fine dining Turkish cuisine and enjoy a Bosphorus dinner cruise with traditional entertainment.</p>",
+    "shortDescription": "Savor the authentic flavors of Turkish cuisine",
     "duration": "3 days",
-    "label": "Wellness Retreat",
+    "label": "Culinary",
     "tourDetails": {
       "itinerary": [
-        "Relax in Pamukkale's thermal pools",
-        "Visit Hierapolis and Cleopatra Pool",
-        "Explore the natural terraces"
+        "Visit Spice Bazaar",
+        "Participate in cooking class",
+        "Enjoy neighborhood food tour",
+        "Experience fine dining",
+        "Bosphorus dinner cruise"
       ],
-      "highlights": ["Pamukkale", "Hierapolis", "Cleopatra Pool"],
+      "highlights": ["Cooking Class", "Spice Bazaar", "Street Food Tour"],
       "inclusions": [
-        "Accommodation",
-        "Meals (Breakfast and Dinner)",
-        "Guided Tour",
-        "Transport"
+        "Boutique Hotel Accommodation",
+        "All Meals and Tastings",
+        "Cooking Class Materials",
+        "Food Tour Guide",
+        "Bosphorus Dinner Cruise"
       ],
-      "exclusions": ["Flights", "Personal Expenses", "Travel Insurance"],
+      "exclusions": [
+        "Flights",
+        "Personal Expenses",
+        "Alcoholic Beverages (except welcome drink)"
+      ],
       "remarks": [
-        "Bring swimwear for the thermal pools",
-        "Comfortable shoes for walking around the terraces"
+        "Dietary restrictions accommodated with advance notice",
+        "Comfortable walking shoes recommended",
+        "Come hungry to each experience!"
       ]
     }
   },
   {
-    "title": "Pamukkale & Ephesus Wonders",
-    "location": "Pamukkale",
-    "price": 1150,
-    "tags": ["Nature", "History", "Culture"],
-    "images": ["/hero/hero-02.png", "/hero/hero-01.png", "/hero/hero-03.png"],
-    "description": "<h2>The Wonders of Pamukkale and Ephesus</h2><p>This 5-day tour combines the historical marvels of Ephesus with the natural beauty of Pamukkale. From the ancient ruins to the healing thermal waters, this tour is the perfect combination of culture and nature.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Explore the ancient city of Ephesus, including the Temple of Artemis and the Library of Celsus.</p><p><strong>Day 2:</strong> Visit the House of Virgin Mary and the Theatre of Ephesus.</p><p><strong>Day 3:</strong> Travel to Pamukkale and experience its natural beauty. Relax in the thermal pools and explore the ancient ruins of Hierapolis.</p><p><strong>Day 4-5:</strong> Enjoy time in Pamukkale and explore the region further before returning home.</p>",
-    "shortDescription": "A tour of Ephesus and Pamukkale’s best highlights",
-    "duration": "5 days",
-    "label": "History & Nature",
+    "title": "Cappadocia Photography Expedition",
+    "location": "Cappadocia",
+    "price": 1200,
+    "tags": ["Photography", "Landscape", "Adventure"],
+    "images": ["/static/test10.png", "/static/test1.png", "/static/test2.png"],
+    "description": "<h2>Capture the Magic of Cappadocia</h2><p>Designed specifically for photography enthusiasts, this tour takes you to the most photogenic locations in Cappadocia at the optimal times for lighting. Learn techniques from professional photographers while exploring this otherworldly landscape.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Sunrise hot air balloon ride for aerial photography, followed by a workshop on landscape photography.</p><p><strong>Day 2:</strong> Dawn photoshoot at Pasabag (Monks Valley), followed by exploring cave churches and hidden valleys.</p><p><strong>Day 3:</strong> Night photography session capturing star trails over the unique rock formations, with instruction on long exposure techniques.</p>",
+    "shortDescription": "Perfect your photography in stunning Cappadocia",
+    "duration": "3 days",
+    "label": "Specialized",
     "tourDetails": {
       "itinerary": [
-        "Explore Ephesus archaeological site",
-        "Visit the House of Virgin Mary",
-        "Relax in Pamukkale’s thermal waters",
-        "Visit Hierapolis"
+        "Hot air balloon ride with photography focus",
+        "Landscape photography workshop",
+        "Dawn shoot at Pasabag",
+        "Explore cave churches",
+        "Night photography session"
       ],
-      "highlights": ["Ephesus", "Pamukkale", "Hierapolis"],
+      "highlights": [
+        "Sunrise Balloon Photography",
+        "Fairy Chimneys",
+        "Night Sky Photography"
+      ],
+      "inclusions": [
+        "Boutique Cave Hotel",
+        "Daily Breakfast",
+        "Professional Photography Guide",
+        "Hot Air Balloon Ride",
+        "Transport to Photo Locations"
+      ],
+      "exclusions": ["Flights", "Camera Equipment", "Personal Expenses"],
+      "remarks": [
+        "Suitable for all photography levels",
+        "Tripod recommended for night photography",
+        "Early morning starts required"
+      ]
+    }
+  },
+  {
+    "title": "Black Sea Coastal Explorer",
+    "location": "Turkey",
+    "price": 1350,
+    "tags": ["Nature", "Culture", "Off-the-beaten-path"],
+    "images": ["/static/test3.png", "/static/test4.png", "/static/test5.png"],
+    "description": "<h2>Discover Turkey's Verdant North Coast</h2><p>Experience the lush landscapes, unique culture, and hidden treasures of Turkey's Black Sea region. From misty mountains to ancient monasteries, this tour reveals a side of Turkey few tourists see.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1-2:</strong> Explore the alpine meadows and traditional villages of the Kaçkar Mountains.</p><p><strong>Day 3-4:</strong> Visit Trabzon and the historic Sumela Monastery clinging to a steep cliff.</p><p><strong>Day 5-6:</strong> Discover Amasya with its Ottoman houses and rock tombs of Pontic kings.</p>",
+    "shortDescription": "Experience Turkey's lush Black Sea coastline",
+    "duration": "6 days",
+    "label": "Off the Beaten Path",
+    "tourDetails": {
+      "itinerary": [
+        "Explore Kaçkar Mountains",
+        "Visit traditional Black Sea villages",
+        "Tour Sumela Monastery",
+        "Discover historic Amasya",
+        "See Pontic rock tombs"
+      ],
+      "highlights": [
+        "Kaçkar Mountains",
+        "Sumela Monastery",
+        "Amasya Ottoman Houses"
+      ],
       "inclusions": [
         "Accommodation",
-        "Meals (Breakfast and Dinner)",
-        "Guided Tour",
-        "Transport"
+        "Daily Breakfast and Dinner",
+        "Expert Local Guide",
+        "All Transport",
+        "Entrance Fees"
       ],
       "exclusions": ["Flights", "Personal Expenses", "Travel Insurance"],
       "remarks": [
-        "Comfortable shoes for exploring ancient ruins",
-        "Swimwear for Pamukkale’s pools"
+        "Moderate fitness level required",
+        "Weather appropriate clothing essential",
+        "Some remote locations with basic facilities"
+      ]
+    }
+  },
+  {
+    "title": "Turkish Hammam Wellness Retreat",
+    "location": "Istanbul",
+    "price": 1500,
+    "tags": ["Wellness", "Luxury", "Relaxation"],
+    "images": ["/static/test6.png", "/static/test7.png", "/static/test8.png"],
+    "description": "<h2>Rejuvenate in Traditional Turkish Style</h2><p>Immerse yourself in the centuries-old tradition of the Turkish hammam. This wellness retreat combines authentic bathing rituals with modern spa treatments for complete relaxation and rejuvenation.</p><h3>Highlights of Your Journey</h3><p><strong>Day 1:</strong> Experience a traditional hammam ceremony in a historic 16th-century bath house.</p><p><strong>Day 2:</strong> Enjoy aromatherapy treatments and a private yoga session overlooking the Bosphorus.</p><p><strong>Day 3:</strong> Learn about Turkish herbal remedies and tea traditions, followed by a luxury spa experience.</p>",
+    "shortDescription": "Relax with traditional Turkish bath experiences",
+    "duration": "3 days",
+    "label": "Wellness",
+    "tourDetails": {
+      "itinerary": [
+        "Traditional hammam ceremony",
+        "Aromatherapy treatments",
+        "Private yoga session",
+        "Turkish herbal remedies workshop",
+        "Luxury spa experience"
+      ],
+      "highlights": [
+        "Historic Hammam",
+        "Bosphorus View Yoga",
+        "Luxury Spa Treatments"
+      ],
+      "inclusions": [
+        "Luxury Hotel Accommodation",
+        "Daily Breakfast",
+        "All Wellness Treatments",
+        "Private Wellness Guide",
+        "Transfers"
+      ],
+      "exclusions": ["Flights", "Personal Expenses", "Additional Treatments"],
+      "remarks": [
+        "Suitable for all fitness levels",
+        "Bring swimwear for spa facilities",
+        "Inform of any health conditions in advance"
       ]
     }
   }

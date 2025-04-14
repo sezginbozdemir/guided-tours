@@ -1,36 +1,97 @@
 "use client";
-
-import { Paper, Title, List, Group } from "@mantine/core";
-import { FiCheck } from "react-icons/fi";
+import { useState } from "react";
+import {
+  Box,
+  Accordion,
+  Title,
+  Text,
+  Stack,
+  Group,
+  Divider,
+  Button,
+  Tooltip,
+} from "@mantine/core";
+import {
+  FiChevronDown,
+  FiChevronRight,
+  FiInfo,
+  FiCalendar,
+} from "react-icons/fi";
+import { GoPlus } from "react-icons/go";
 import classes from "./index.module.css";
+import { Tour } from "@/types/globals";
 
 interface Props {
-  tourDetails: Record<string, string[]>;
+  tour: Tour;
 }
 
-const TourDetails = ({ tourDetails }: Props) => {
+const TourDetails = ({ tour }: Props) => {
+  const [activeItem, setActiveItem] = useState<string | null>(
+    Object.keys(tour.tourDetails)[0]
+  );
+
   return (
-    <Group className={classes.group}>
-      {Object.entries(tourDetails).map(([key, values]) => (
-        <Paper
-          className={classes.paper}
-          key={key}
-          shadow="sm"
-          p="md"
+    <Box className={classes.container} p="md">
+      <Group mb="md" justify="space-between" align="center">
+        <Group align="center">
+          <FiInfo size={24} className={classes.infoIcon} />
+          <Title order={3}>Tour Details</Title>
+        </Group>
+        <Title order={3}>From {tour.price} $</Title>
+      </Group>
+      <Divider />
+      <Accordion
+        value={activeItem}
+        onChange={setActiveItem}
+        variant="filled"
+        radius="md"
+        className={classes.accordion}
+        chevron={<GoPlus />}
+      >
+        {Object.entries(tour.tourDetails).map(([key, values]) => (
+          <Accordion.Item key={key} value={key} className={classes.item}>
+            <Accordion.Control
+              icon={
+                activeItem === key ? (
+                  <FiChevronDown size={15} />
+                ) : (
+                  <FiChevronRight size={15} />
+                )
+              }
+              className={classes.control}
+            >
+              <Text fw={500} size="md" style={{ textTransform: "capitalize" }}>
+                {key}
+              </Text>
+            </Accordion.Control>
+            <Accordion.Panel className={classes.panel}>
+              <Stack gap="xs">
+                {values.map((value, index) => (
+                  <Group key={index} gap="sm">
+                    <Box className={classes.bullet} />
+                    <Text size="md" fw={400}>
+                      {value}
+                    </Text>
+                  </Group>
+                ))}
+              </Stack>
+            </Accordion.Panel>
+          </Accordion.Item>
+        ))}
+      </Accordion>
+      <Divider my="md" />
+      <Tooltip label="Book this amazing tour now!" position="top">
+        <Button
+          size="lg"
           radius="md"
-          withBorder
+          leftSection={<FiCalendar size={20} />}
+          className={classes.bookButton}
+          fullWidth
         >
-          <Title style={{ textTransform: "capitalize" }} mb={20} order={4}>
-            {key}
-          </Title>
-          <List size="sm" icon={<FiCheck size={20} />}>
-            {values.map((value, index) => (
-              <List.Item key={index}>{value}</List.Item>
-            ))}
-          </List>
-        </Paper>
-      ))}
-    </Group>
+          Book Now
+        </Button>
+      </Tooltip>
+    </Box>
   );
 };
 

@@ -1,54 +1,45 @@
 "use client";
 import classes from "./index.module.css";
-import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
-import { Box, Group, ActionIcon } from "@mantine/core";
+import { Box, Group } from "@mantine/core";
 import Image from "next/image";
 import { Tour } from "@/types/globals";
-import { useState } from "react";
+import { Carousel } from "@mantine/carousel";
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 interface Props {
   tour: Tour;
 }
 
 const ImageGallery = ({ tour }: Props) => {
-  const [currentIndex, setCurrentIndex] = useState(1);
-  const nextImage = () => {
-    setCurrentIndex((prev) => (prev + 1 >= tour.images.length ? 1 : prev + 1));
-  };
-
-  const prevImage = () => {
-    setCurrentIndex((prev) =>
-      prev - 1 < 1 ? tour.images.length - 1 : prev - 1
-    );
-  };
-
   return (
-    <Group h={500}>
+    <Group w="100%" h={400} gap={10}>
       <Box className={classes.box1}>
         <Image src={`${API_URL}${tour.images[0]}`} alt={tour.title} fill />
       </Box>
       <Box className={classes.box2}>
-        <Image
-          src={`${API_URL}${tour.images[currentIndex]}`}
-          alt={tour.title}
-          fill
-        />
-        <ActionIcon
-          variant="transparent"
-          className={classes.leftButton}
-          onClick={prevImage}
-          aria-label="Previous Image"
+        <Carousel
+          w="100%"
+          h="100%"
+          slideSize="100%"
+          slidesToScroll={1}
+          loop
+          draggable
+          classNames={{
+            control: classes.control,
+            container: classes.carouselContainer,
+            viewport: classes.carouselViewport,
+          }}
         >
-          <FaChevronCircleLeft color="white" size={60} />
-        </ActionIcon>
-        <ActionIcon
-          variant="transparent"
-          className={classes.rightButton}
-          onClick={nextImage}
-          aria-label="Next Image"
-        >
-          <FaChevronCircleRight color="white" size={60} />
-        </ActionIcon>
+          {tour.images.slice(1).map((img, idx) => (
+            <Carousel.Slide key={idx}>
+              <Image
+                style={{ borderRadius: "1rem", objectFit: "cover" }}
+                src={`${API_URL}${img}`}
+                alt={tour.title}
+                fill
+              />
+            </Carousel.Slide>
+          ))}
+        </Carousel>
       </Box>
     </Group>
   );

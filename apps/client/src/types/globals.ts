@@ -8,7 +8,7 @@ export interface Tour {
   description: string;
   shortDescription: string;
   duration: string;
-  tourDetails: any;
+  tourDetails: Record<string, string[]>;
   label?: string | null;
 }
 export interface Location {

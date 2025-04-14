@@ -1,7 +1,7 @@
 .button {
   background-color: var(--background);
   border: 1px solid var(--border);
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   color: var(--foreground);
   &:hover {
     background-color: gray;

@@ -28,8 +28,38 @@ const navItems: NavItem[] = [
   {
     icon: <GridIcon />,
     name: "Dashboard",
-    subItems: [{ name: "Ecommerce", path: "/", pro: false }],
+    path: "/",
   },
+
+  {
+    icon: <TableIcon />,
+    name: "Tours",
+    subItems: [
+      { name: "See tours", path: "/tours", pro: false },
+      { name: "Create new tour", path: "/create-tour", pro: false },
+      { name: "Add locations", path: "/add-locations", pro: false },
+    ],
+  },
+];
+
+const othersItems: NavItem[] = [
+  {
+    icon: <PieChartIcon />,
+    name: "Charts",
+    subItems: [
+      { name: "Line Chart", path: "/line-chart", pro: false },
+      { name: "Bar Chart", path: "/bar-chart", pro: false },
+    ],
+  },
+  {
+    name: "Pages",
+    icon: <PageIcon />,
+    subItems: [
+      { name: "Blank Page", path: "/blank", pro: false },
+      { name: "404 Error", path: "/error-404", pro: false },
+    ],
+  },
+
   {
     icon: <CalenderIcon />,
     name: "Calendar",
@@ -45,34 +75,7 @@ const navItems: NavItem[] = [
     icon: <ListIcon />,
     subItems: [{ name: "Form Elements", path: "/form-elements", pro: false }],
   },
-  {
-    icon: <TableIcon />,
-    name: "Tours",
-    subItems: [
-      { name: "See tours", path: "/tours", pro: false },
-      { name: "Create new tour", path: "/create-tour", pro: false },
-      { name: "Add locations", path: "/add-locations", pro: false },
-    ],
-  },
-  {
-    name: "Pages",
-    icon: <PageIcon />,
-    subItems: [
-      { name: "Blank Page", path: "/blank", pro: false },
-      { name: "404 Error", path: "/error-404", pro: false },
-    ],
-  },
-];
 
-const othersItems: NavItem[] = [
-  {
-    icon: <PieChartIcon />,
-    name: "Charts",
-    subItems: [
-      { name: "Line Chart", path: "/line-chart", pro: false },
-      { name: "Bar Chart", path: "/bar-chart", pro: false },
-    ],
-  },
   {
     icon: <BoxCubeIcon />,
     name: "UI Elements",
@@ -308,22 +311,13 @@ const AppSidebar: React.FC = () => {
       >
         <Link to="/">
           {isExpanded || isHovered || isMobileOpen ? (
-            <>
-              <img
-                className="dark:hidden"
-                src="/images/logo/logo.svg"
-                alt="Logo"
-                width={150}
-                height={40}
-              />
-              <img
-                className="hidden dark:block"
-                src="/images/logo/logo-dark.svg"
-                alt="Logo"
-                width={150}
-                height={40}
-              />
-            </>
+            <div className="flex gap-3">
+              <img src="./images/logo/logo-icon.svg" alt="Logo" />
+              <span className="dark:hidden text-lg">Dashboard</span>
+              <span className="hidden dark:block text-lg text-white">
+                Dashboard
+              </span>
+            </div>
           ) : (
             <img
               src="/images/logo/logo-icon.svg"
