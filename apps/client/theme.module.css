@@ -34,3 +34,15 @@
 .breadcrumbs {
   margin-top: 15px;
 }
+.paginationControl {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5rem;
+  border-color: var(--border);
+
+  &[data-active] {
+    background-color: gray;
+    color: white;
+    border-color: var(--border);
+  }
+}

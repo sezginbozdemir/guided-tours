@@ -1,7 +1,7 @@
 :root {
   --font-heading: var(--font-poppins);
   --font-body: var(--font-dm-sans);
-  --background: #ffffff;
+  --background: #f5f7f8;
   --foreground: #3e3e3e;
   --border: #eaeaea;
 }

@@ -13,22 +13,6 @@ interface Props {
 }
 
 const FeaturedTours: React.FC<Props> = ({ tours, label }) => {
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [embla, setEmbla] = useState<Embla | null>(null);
-
-  const handleScroll = useCallback(() => {
-    if (!embla) return;
-    const progress = Math.max(0, Math.min(1, embla.scrollProgress()));
-    setScrollProgress(progress * 100);
-  }, [embla, setScrollProgress]);
-
-  useEffect(() => {
-    if (embla) {
-      embla.on("scroll", handleScroll);
-      handleScroll();
-    }
-  }, [embla]);
-
   const filteredTours = label
     ? tours.filter((tour) => tour.label?.toLowerCase() === label.toLowerCase())
     : tours;
@@ -45,13 +29,12 @@ const FeaturedTours: React.FC<Props> = ({ tours, label }) => {
         mt={30}
         mb={30}
         height={150}
-        slideSize="33.333333%"
+        slideSize={{ base: "95%", xs: "80%", sm: "50%", md: "33.3333%" }}
         slideGap="sm"
         align="start"
         slidesToScroll={1}
         dragFree
         loop
-        getEmblaApi={setEmbla}
       >
         {filteredTours.map((tour, index) => (
           <Carousel.Slide key={index}>
@@ -59,15 +42,6 @@ const FeaturedTours: React.FC<Props> = ({ tours, label }) => {
           </Carousel.Slide>
         ))}
       </Carousel>
-      <Box className={classes.progress}>
-        <Progress
-          color="gray"
-          value={scrollProgress}
-          size="5px"
-          w="100%"
-          maw={150}
-        />
-      </Box>
     </>
   );
 };

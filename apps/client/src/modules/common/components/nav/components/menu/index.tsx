@@ -1,5 +1,5 @@
 "use client";
-import { Group, Menu, Title } from "@mantine/core";
+import { Group, Menu, Text } from "@mantine/core";
 import { FiChevronDown } from "react-icons/fi";
 import classes from "../../index.module.css";
 import Link from "next/link";
@@ -22,17 +22,17 @@ const MenuItems = ({ locations }: Props) => {
   const otherLocations = locations.filter((loc) => !loc.popular);
 
   return (
-    <Group gap={30} justify="space-between">
+    <Group gap={15} justify="space-between">
       {links.map((link, index) => {
         if (link.type === "dropdown") {
           return (
             <Menu key={index} trigger="hover">
               <Menu.Target>
-                <Title className={classes.targetGroup} order={5}>
-                  {link.name} <FiChevronDown size={20} />
-                </Title>
+                <Text className={classes.targetGroup} fw={450} size="lg">
+                  {link.name} <FiChevronDown size={17} />
+                </Text>
               </Menu.Target>
-              <Menu.Dropdown>
+              <Menu.Dropdown className={classes.dropdown}>
                 {popularLocations.map((loc, idx) => (
                   <Link
                     key={idx}
@@ -49,11 +49,11 @@ const MenuItems = ({ locations }: Props) => {
           return (
             <Menu key={index} trigger="hover">
               <Menu.Target>
-                <Title className={classes.targetGroup} order={5}>
-                  {link.name} <FiChevronDown size={20} />
-                </Title>
+                <Text className={classes.targetGroup} fw={450} size="lg">
+                  {link.name} <FiChevronDown size={17} />
+                </Text>
               </Menu.Target>
-              <Menu.Dropdown>
+              <Menu.Dropdown className={classes.dropdown}>
                 {locations.map((loc, idx) => (
                   <Link key={idx} href={`/destinations/${loc.id}`}>
                     <Menu.Item>{loc.name}</Menu.Item>
@@ -68,11 +68,11 @@ const MenuItems = ({ locations }: Props) => {
           return (
             <Menu key={index} trigger="hover">
               <Menu.Target>
-                <Title className={classes.targetGroup} order={5}>
-                  {link.name} <FiChevronDown size={20} />
-                </Title>
+                <Text className={classes.targetGroup} fw={450} size="lg">
+                  {link.name} <FiChevronDown size={17} />
+                </Text>
               </Menu.Target>
-              <Menu.Dropdown>
+              <Menu.Dropdown className={classes.dropdown}>
                 {otherLocations.map((loc, idx) => (
                   <Link
                     key={idx}
@@ -88,7 +88,9 @@ const MenuItems = ({ locations }: Props) => {
 
         return (
           <Link key={index} href={link.path!} className={classes.navLink}>
-            <Title order={5}>{link.name}</Title>
+            <Text fw={450} size="lg">
+              {link.name}
+            </Text>
           </Link>
         );
       })}

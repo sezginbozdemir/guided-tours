@@ -36,3 +36,36 @@
   align-items: center;
   gap: 0.5rem;
 }
+.transitionBox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+}
+.transitionButton {
+  width: 130px;
+}
+.transitionPaper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 5px;
+}
+
+.transitionText {
+  padding: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--mantine-color-gray-1);
+  }
+}

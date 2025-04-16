@@ -11,3 +11,27 @@
     object-fit: cover;
   }
 }
+.overlay {
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+.float {
+  position: absolute;
+  width: 100%;
+  padding: 0 20%;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--background);
+  z-index: 2;
+  @media (max-width: 768px) {
+    padding: 0 5%;
+    top: 55%;
+  }
+}

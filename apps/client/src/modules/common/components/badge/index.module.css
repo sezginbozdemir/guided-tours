@@ -3,7 +3,7 @@
   font-weight: 500;
   text-transform: capitalize;
   padding: 10px 15px;
-  background-color: var(--background);
+  background-color: white;
   color: var(--foreground);
   border-radius: 0.5rem;
   border: 1px solid var(--border);

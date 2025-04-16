@@ -16,5 +16,6 @@ export interface Location {
   name: string;
   images: string[];
   description: string;
+  about: string;
   popular?: boolean;
 }

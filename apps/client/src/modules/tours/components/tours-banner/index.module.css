@@ -1,0 +1,29 @@
+.imgBox {
+  position: relative;
+  display: flex;
+  align-items: end;
+  width: 100%;
+  height: 300px;
+  border-radius: 1rem;
+  overflow: hidden;
+  & img {
+    object-fit: cover;
+  }
+}
+.locTitle {
+  color: var(--background);
+  z-index: 2;
+  position: inherit;
+  font-size: 3.5rem;
+  margin: 1rem 1.5rem;
+  text-transform: capitalize;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 1;
+}

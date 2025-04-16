@@ -10,7 +10,7 @@ const DestinationsSlider = ({ locations }: Props) => {
   return (
     <Carousel
       height={200}
-      slideSize="20%"
+      slideSize={{ base: "50%", xs: "33.333333%", sm: "20%" }}
       slideGap="sm"
       align="start"
       slidesToScroll={2}

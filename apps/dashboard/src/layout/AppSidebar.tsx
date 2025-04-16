@@ -37,6 +37,13 @@ const navItems: NavItem[] = [
     subItems: [
       { name: "See tours", path: "/tours", pro: false },
       { name: "Create new tour", path: "/create-tour", pro: false },
+    ],
+  },
+  {
+    icon: <TableIcon />,
+    name: "Locations",
+    subItems: [
+      { name: "See locations", path: "/locations", pro: false },
       { name: "Add locations", path: "/add-locations", pro: false },
     ],
   },

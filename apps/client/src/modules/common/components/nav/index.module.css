@@ -1,8 +1,18 @@
 .navContainer {
-  border-bottom: 0.5px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-radius: 1rem;
+  position: sticky;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  top: 0px;
+  z-index: 100;
+  background-color: var(--background);
 }
 .targetGroup {
   display: flex;
   gap: 3px;
   align-items: center;
+}
+.dropdown {
+  border: 1px solid var(--border);
+  border-radius: 1rem;
 }

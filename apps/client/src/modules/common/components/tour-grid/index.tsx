@@ -7,25 +7,19 @@ import { Grid, Pagination, Box, Group } from "@mantine/core";
 
 interface Props {
   tours: Tour[];
-  location?: string;
 }
 
-const TourGrid: React.FC<Props> = ({ tours, location }) => {
+const TourGrid: React.FC<Props> = ({ tours }) => {
   const [activePage, setActivePage] = useState(1);
   const gridRef = useRef<HTMLDivElement>(null);
 
-  const filteredTours = location
-    ? tours.filter(
-        (tour) => tour.location?.toLowerCase() === location.toLowerCase()
-      )
-    : tours;
   const toursPerPage = 8;
 
-  const totalPages = Math.ceil(filteredTours.length / toursPerPage);
+  const totalPages = Math.ceil(tours.length / toursPerPage);
 
   const indexOfLastTour = activePage * toursPerPage;
   const indexOfFirstTour = indexOfLastTour - toursPerPage;
-  const currentTours = filteredTours.slice(indexOfFirstTour, indexOfLastTour);
+  const currentTours = tours.slice(indexOfFirstTour, indexOfLastTour);
 
   const handlePageChange = (page: number) => {
     setActivePage(page);

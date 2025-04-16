@@ -1,1 +1,39 @@
+.footerWrapper {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+  background-color: var(--mantine-color-gray-1);
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  height: 100%;
+}
 
+.brand {
+  max-width: 300px;
+}
+
+.socialIcon {
+  background-color: var(--mantine-color-gray-3);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mantine-color-blue-4);
+  transition: background-color 0.3s ease;
+}
+
+.socialIcon:hover {
+  background-color: var(--mantine-color-gray-4);
+}
+.links {
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.brandGroup {
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}

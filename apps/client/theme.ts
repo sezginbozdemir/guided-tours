@@ -1,6 +1,12 @@
 "use client";
 import classes from "./theme.module.css";
-import { Breadcrumbs, createTheme, Text, Title } from "@mantine/core";
+import {
+  Breadcrumbs,
+  createTheme,
+  Pagination,
+  Text,
+  Title,
+} from "@mantine/core";
 import "./src/styles/globals.css";
 import { Carousel } from "@mantine/carousel";
 export const theme = createTheme({
@@ -36,6 +42,11 @@ export const theme = createTheme({
     Breadcrumbs: Breadcrumbs.extend({
       classNames: {
         root: classes.breadcrumbs,
+      },
+    }),
+    Pagination: Pagination.extend({
+      classNames: {
+        control: classes.paginationControl,
       },
     }),
   },

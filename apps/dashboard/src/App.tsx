@@ -20,6 +20,7 @@ import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
 import CreateTour from "./pages/Forms/CreateTour";
 import AddLocations from "./pages/Forms/AddLocations";
+import LocationsTable from "./pages/Tables/LocationsTable";
 
 export default function App() {
   return (
@@ -43,6 +44,7 @@ export default function App() {
 
             {/* Tables */}
             <Route path="/tours" element={<ToursTable />} />
+            <Route path="/locations" element={<LocationsTable />} />
 
             {/* Ui Elements */}
             <Route path="/alerts" element={<Alerts />} />

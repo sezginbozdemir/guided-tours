@@ -11,23 +11,6 @@ interface Props {
   location: Location;
 }
 
-const aboutHtml = `
-  <h2>Introduction</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula tincidunt odio, a auctor tortor volutpat ut. Sed tempor eros eu libero hendrerit, ac malesuada elit tempor. Nulla facilisi.</p>
-
-  <h3>History</h3>
-  <p>Phasellus scelerisque lorem vitae eros mollis, et dictum justo condimentum. Cras laoreet enim ac ante hendrerit, ac aliquet sem elementum. Curabitur euismod, arcu in elementum suscipit, arcu turpis fermentum turpis, ac sollicitudin dolor purus ut libero.</p>
-
-  <h3>Culture</h3>
-  <p>Aenean euismod euismod lorem, sit amet pharetra ante mollis eget. Integer at posuere ligula. Nulla facilisi. Ut dapibus magna at erat tempor, at feugiat dui euismod.</p>
-
-  <h4>Modern Era</h4>
-  <p>Donec varius auctor dolor, at lacinia velit dapibus et. Maecenas vitae vestibulum nulla, in egestas eros. Quisque suscipit, metus id dapibus congue, magna felis auctor elit, vel feugiat libero sapien sit amet libero.</p>
-
-  <h5>Tourism and Economy</h5>
-  <p>Morbi pretium neque sit amet ipsum fermentum, in aliquet sapien eleifend. Donec facilisis nisl in arcu volutpat, ac suscipit nunc maximus. Curabitur vitae mauris orci. Sed non felis id nisi interdum luctus a eu lectus.</p>
-`;
-
 const AboutDestination = ({ location }: Props) => {
   const [isClient, setIsClient] = useState(false);
 
@@ -37,6 +20,21 @@ const AboutDestination = ({ location }: Props) => {
 
   if (!isClient) return;
 
+  const vectorImages = [
+    "/vectors/vectorOne.png",
+    "/vectors/vectorTwo.png",
+    "/vectors/vectorThree.png",
+    "/vectors/vectorFour.png",
+    "/vectors/vectorFive.png",
+    "/vectors/vectorSix.png",
+    "/vectors/vectorSeven.png",
+    "/vectors/vectorEight.png",
+    "/vectors/vectorNine.png",
+    "/vectors/vectorTen.png",
+    "/vectors/vectorEleven.png",
+  ];
+  const vectorIndex = Math.floor(Math.random() * vectorImages.length);
+  const vectorImage = vectorImages[vectorIndex];
   return (
     <Flex
       direction={{ base: "column", sm: "row" }}
@@ -47,11 +45,20 @@ const AboutDestination = ({ location }: Props) => {
       mb={50}
     >
       <Stack style={{ flex: 7 }} gap={0}>
-        <Title order={1} fw={500} className={classes.header}>
-          About {location.name}
-        </Title>
+        <Group mb={10}>
+          <Title order={1} fw={500} className={classes.header}>
+            About {location.name}
+          </Title>
+          <Image
+            src={vectorImage}
+            alt="vector"
+            width={50}
+            height={50}
+            className={classes.vectorImg}
+          />
+        </Group>
         <Divider mb={10} />
-        <Text c="dimmed" dangerouslySetInnerHTML={{ __html: aboutHtml }} />
+        <Text c="dimmed" dangerouslySetInnerHTML={{ __html: location.about }} />
       </Stack>
       <Box className={classes.outerBox}>
         <Box className={classes.innerBox}>

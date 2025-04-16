@@ -59,6 +59,16 @@ export const uploadImages = async (
     return null;
   }
 };
+export const deleteImage = async (filePath: string) => {
+  const filename = filePath.split("/").pop();
+  try {
+    const res = await axios.delete(`${API_URL}/api/upload/${filename}`);
+    return res.data;
+  } catch (error) {
+    console.error("Error deleting image:", error);
+    return null;
+  }
+};
 
 export const fetchAllLocations = async (): Promise<Location[]> => {
   try {

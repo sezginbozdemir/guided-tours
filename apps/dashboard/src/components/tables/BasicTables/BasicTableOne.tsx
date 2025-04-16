@@ -8,7 +8,7 @@ import {
 
 import Badge from "../../ui/badge/Badge";
 import { Tour } from "../../../types/globals";
-import { deleteTour, fetchAllTours } from "../../../utils/api";
+import { deleteImage, deleteTour, fetchAllTours } from "../../../utils/api";
 import ConfirmModal from "../../ui/modal/confirmModal";
 import { useEffect, useState } from "react";
 
@@ -29,6 +29,14 @@ export default function BasicTableOne() {
 
   const handleConfirmDelete = async () => {
     if (selectedTourId == null) return;
+    const tourToDelete = tours.find((tour) => tour.id === selectedTourId);
+    if (!tourToDelete) return;
+
+    if (tourToDelete.images && tourToDelete.images.length > 0) {
+      await Promise.all(
+        tourToDelete.images.map((imgPath) => deleteImage(imgPath))
+      );
+    }
 
     const success = await deleteTour(selectedTourId);
     setLoading(true);

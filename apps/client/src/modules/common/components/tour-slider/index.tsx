@@ -23,7 +23,7 @@ const TourSlider: React.FC<Props> = ({ location, tours, label }) => {
       mt={30}
       mb={30}
       height={500}
-      slideSize="25%"
+      slideSize={{ base: "70%", xs: "45%", sm: "28%", md: "25%" }}
       slideGap="sm"
       align="start"
       slidesToScroll={2}

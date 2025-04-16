@@ -17,7 +17,7 @@ class LocationController {
     }
   }
   static async createLocation(req: Request, res: Response) {
-    const { name, description, images, popular } = req.body;
+    const { name, description, images, popular, about } = req.body;
     if (!name || !images || !description) {
       return res.status(400).json({ error: "All fields are required" });
     }
@@ -27,6 +27,7 @@ class LocationController {
           name,
           images,
           description,
+          about,
           popular: popular ?? false,
         },
       });

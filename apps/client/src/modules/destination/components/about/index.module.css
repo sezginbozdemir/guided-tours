@@ -21,5 +21,8 @@
 }
 .header {
   font-size: 3rem;
-  margin-bottom: 10px;
+}
+.vectorImg {
+  height: auto;
+  object-fit: cover;
 }

@@ -32,11 +32,14 @@ export default async function TourPage({ params }: Props) {
   if (!location) {
     return notFound();
   }
+  const filteredTours = tours.filter(
+    (tour) => tour.location?.toLowerCase() === location.name.toLowerCase()
+  );
 
   return (
     <DestinationTemplate
       locations={locations}
-      tours={tours}
+      tours={filteredTours}
       location={location}
     />
   );
