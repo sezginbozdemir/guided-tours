@@ -1,5 +1,5 @@
 "use client";
-import { Container, Title, Text, Stack } from "@mantine/core";
+import { Title, Text, Stack } from "@mantine/core";
 import data from "./data.json";
 
 const AboutTemplate = () => {

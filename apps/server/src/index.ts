@@ -7,6 +7,19 @@ import cors from "cors";
 import multer from "multer";
 import fs from "fs";
 import path from "path";
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
+
+async function checkPrismaHealth() {
+  try {
+    await prisma.$connect();
+    console.log("Database connected successfully.");
+  } catch (error: any) {
+    const msg = `Database connection failed:${error.message}`;
+    throw new Error(msg);
+  }
+}
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -72,6 +85,15 @@ app.use("/api", articleRoutes);
 
 const PORT = 9000;
 
-app.listen(PORT, () => {
-  console.log(`Backend running on ${PORT}`);
-});
+async function startServer() {
+  try {
+    await checkPrismaHealth();
+    app.listen(PORT, () => {
+      console.log(`Backend running on ${PORT}`);
+    });
+  } catch (error: any) {
+    console.error("Failed to start server:", error.message);
+    process.exit(1);
+  }
+}
+startServer();
